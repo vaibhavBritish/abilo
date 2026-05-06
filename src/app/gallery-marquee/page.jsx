@@ -1,14 +1,14 @@
 "use client";
 
 const marqueeItems = [
-  { id: 1, url: "/gallery/unamed2.webp" },
-  { id: 2, url: "/gallery/unamed3.webp" },
-  { id: 3, url: "/gallery/unamed4.webp" },
-  { id: 4, url: "/gallery/unamed5.webp" },
-  { id: 5, url: "/gallery/unamed8.webp" },
-  { id: 6, url: "/gallery/unamed7.webp" },
-  { id: 7, url: "/gallery/unamed8.webp" },
-  { id: 8, url: "/gallery/unnamed.webp" },
+  { id: 1, url: "/gallery/tmm-gallery-1.png" },
+  { id: 2, url: "/gallery/tmm-gallery-2.png" },
+  { id: 3, url: "/gallery/tmm-gallery-3.png" },
+  { id: 4, url: "/gallery/tmm-gallery-4.png" },
+  { id: 5, url: "/gallery/tmm-gallery-5.png" },
+  { id: 6, url: "/gallery/tmm-gallery-6.png" },
+  { id: 7, url: "/gallery/tmm-gallery-7.png" },
+  { id: 8, url: "/gallery/tmm-gallery-8.png" },
 ];
 
 export default function MarqueePage() {

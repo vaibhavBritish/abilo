@@ -10,11 +10,11 @@ const API = "/api";
 
 const SERVICES = [
   "Residential Moving",
-  "Office Relocation",
+  "Trucking Services",
+  "LTL Transportation",
   "Commercial Moving",
-  "Packing Services",
-  "Storage Solutions",
-  "Long Distance Moving",
+  "Warehousing & Storage",
+  "Regional Freight",
   "Other",
 ];
 
@@ -60,7 +60,7 @@ export const LeadForm = () => {
       }}
     >
       {/* Background decorative circles */}
-      <div style={{ position: "absolute", top: -80, right: -80, width: 320, height: 320, borderRadius: "50%", background: "rgba(255, 90, 0, 0.05)", pointerEvents: "none" }} />
+      <div style={{ position: "absolute", top: -80, right: -80, width: 320, height: 320, borderRadius: "50%", background: "rgba(234, 179, 8, 0.05)", pointerEvents: "none" }} />
       <div style={{ position: "absolute", bottom: -60, left: -60, width: 240, height: 240, borderRadius: "50%", background: "rgba(0, 8, 20, 0.03)", pointerEvents: "none" }} />
 
       <div className="container-custom" style={{ position: "relative", zIndex: 1 }}>
@@ -74,9 +74,9 @@ export const LeadForm = () => {
                 display: "inline-flex",
                 alignItems: "center",
                 gap: 8,
-                background: "rgba(234,88,12,0.15)",
-                border: "1px solid rgba(234,88,12,0.3)",
-                color: "#fb923c",
+                background: "rgba(234, 179, 8, 0.15)",
+                border: "1px solid rgba(234, 179, 8, 0.3)",
+                color: "var(--secondary)",
                 borderRadius: 99,
                 padding: "6px 16px",
                 fontSize: "0.8rem",
@@ -99,11 +99,11 @@ export const LeadForm = () => {
                 }}
               >
                 Get a Free Quote &amp;<br />
-                <span style={{ color: "var(--primary)" }}>Expert Moving Advice</span> Today
+                <span style={{ color: "var(--primary)" }}>Expert Logistics Advice</span> Today
               </h2>
 
             <p style={{ color: "#374151", fontSize: "1rem", lineHeight: 1.75, marginBottom: "2rem", maxWidth: 420 }}>
-              Tell us about your relocation needs and our moving experts will call you
+              Tell us about your logistics needs and our team will call you
               back within 30 minutes with a free estimate — absolutely free.
             </p>
 
@@ -163,7 +163,7 @@ export const LeadForm = () => {
                   <strong> 30 minutes</strong> with a free estimate and relocation plan.
                 </p>
                 <a
-                  href="tel:+1800555ABIL"
+                  href="tel:+130609940409"
                   style={{
                     display: "inline-flex", alignItems: "center", gap: 8,
                     background: "var(--primary)", color: "#fff",
@@ -220,7 +220,7 @@ export const LeadForm = () => {
                         name="phone"
                         value={form.phone}
                         onChange={handleChange}
-                        placeholder="+1-800-555-ABIL"
+                        placeholder="+1-306-0994-0409"
                         required
                         type="tel"
                         style={inputStyle}
@@ -271,7 +271,7 @@ export const LeadForm = () => {
                       name="message"
                       value={form.message}
                       onChange={handleChange}
-                      placeholder="e.g. Moving a 3-bedroom house from Toronto to Vancouver..."
+                      placeholder="e.g. Moving household goods from Saskatoon to Winnipeg..."
                       rows={3}
                       style={{ ...inputStyle, paddingLeft: "0.85rem", resize: "vertical", fontFamily: "inherit" }}
                       data-testid="lead-message-textarea"

@@ -7,15 +7,15 @@ export const ServiceAreas = () => {
   const sectionRef = useScrollReveal();
 
   const areas = [
-    "North York", "Scarborough", "Etobicoke", "Mississauga", "Brampton",
-    "Markham", "Vaughan", "Oakville", "Burlington", "Richmond Hill",
-    "Ajax", "Pickering", "Oshawa", "Whitby", "Milton",
-    "Newmarket", "Aurora", "King City", "Caledon", "Halton Hills",
+    "Saskatoon", "Regina", "Prince Albert", "Moose Jaw", "Swift Current",
+    "Yorkton", "North Battleford", "Estevan", "Weyburn", "Melfort",
+    "Humboldt", "Martensville", "Warman", "Lloydminster", "Kindersley",
+    "Winnipeg", "Brandon", "Steinbach", "Thompson", "Portage la Prairie",
   ];
 
   const intercity = [
-    "Toronto → Vancouver", "Toronto → Montreal", "Toronto → Calgary",
-    "Toronto → Ottawa", "Toronto → Edmonton", "Toronto → Winnipeg",
+    "Saskatoon → Winnipeg", "Regina → Calgary", "Saskatoon → Edmonton",
+    "Winnipeg → Regina", "Prince Albert → Saskatoon", "Moose Jaw → Regina",
   ];
 
   return (
@@ -36,7 +36,7 @@ export const ServiceAreas = () => {
             Areas We Serve
           </h2>
           <p className="text-zinc-400 mt-3 max-w-xl mx-auto text-sm md:text-base">
-            We provide professional moving services across the Greater Toronto Area and long-distance relocations nationwide.
+            We provide professional moving and trucking services across Saskatchewan and Winnipeg with reliable regional logistics.
           </p>
         </div>
 
@@ -46,12 +46,12 @@ export const ServiceAreas = () => {
           {/* Local Areas */}
           <div className="bg-zinc-900/50 rounded-2xl p-6 md:p-8 border border-zinc-800/50 backdrop-blur-sm shadow-xl">
             <div className="flex items-center gap-4 mb-7">
-              <div className="bg-primary/10 text-primary p-3 rounded-xl border border-primary/20 shadow-[0_0_20px_rgba(255,90,0,0.1)]">
+              <div className="bg-primary/10 text-primary p-3 rounded-xl border border-primary/20 shadow-[0_0_20px_rgba(234,179,8,0.1)]">
                 <MapPin size={22} weight="fill" />
               </div>
               <div>
-                <div className="text-lg font-bold text-white tracking-tight">Greater Toronto Area</div>
-                <div className="text-xs text-zinc-500 font-medium">Serving all GTA municipalities</div>
+                <div className="text-lg font-bold text-white tracking-tight">Saskatchewan & Winnipeg</div>
+                <div className="text-xs text-zinc-500 font-medium">Serving all major prairie municipalities</div>
               </div>
             </div>
 
@@ -71,7 +71,7 @@ export const ServiceAreas = () => {
           {/* Intercity */}
           <div className="bg-zinc-900/50 rounded-2xl p-6 md:p-8 border border-zinc-800/50 backdrop-blur-sm shadow-xl">
             <div className="flex items-center gap-4 mb-7">
-              <div className="bg-primary/10 text-primary p-3 rounded-xl border border-primary/20 shadow-[0_0_20px_rgba(255,90,0,0.1)]">
+              <div className="bg-primary/10 text-primary p-3 rounded-xl border border-primary/20 shadow-[0_0_20px_rgba(234,179,8,0.1)]">
                 <Phone size={22} weight="fill" />
               </div>
               <div>
@@ -95,7 +95,7 @@ export const ServiceAreas = () => {
             </div>
             
             {/* Working Hours */}
-            <div className="mt-6 p-[2px] rounded-xl bg-gradient-to-r from-primary to-orange-400">
+            <div className="mt-6 p-[2px] rounded-xl bg-gradient-to-r from-primary to-secondary">
               <div className="bg-[#0f1115] rounded-[10px] p-4 flex items-center justify-center gap-3">
                 <Clock size={18} weight="fill" className="text-primary" />
                 <div className="text-xs font-bold text-white uppercase tracking-wider">

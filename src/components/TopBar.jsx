@@ -16,26 +16,26 @@ export const TopBar = () => (
     >
       <div className="flex items-center gap-6">
         <a
-          href="tel:+1800555ABIL"
+          href="tel:+130609940409"
           style={{ display: "flex", alignItems: "center", gap: 6, color: "#fff", textDecoration: "none", fontSize: "0.82rem", fontWeight: 600 }}
         >
           <Phone size={14} weight="fill" style={{ color: "#fff" }} />
-          +1-800-555-ABIL
+          +1-306-0994-0409
         </a>
         <a
-          href="mailto:contact@abilo.ca"
+          href="mailto:movemate@tmmgroup.ca"
           style={{ alignItems: "center", gap: 6, color: "#fff", textDecoration: "none", fontSize: "0.82rem", fontWeight: 600 }}
           className="hidden sm:flex"
         >
           <EnvelopeSimple size={14} weight="fill" style={{ color: "#fff" }} />
-          contact@abilo.ca
+          movemate@tmmgroup.ca
         </a>
       </div>
 
       <div className="flex items-center gap-4">
         <div style={{ alignItems: "center", gap: 5, fontSize: "0.80rem", color: "#fff", fontWeight: 600 }} className="hidden lg:flex">
           <MapPin size={13} weight="fill" style={{ color: "#fff" }} />
-          Toronto, Ontario
+          Saskatchewan & Winnipeg
         </div>
         <div className="flex gap-3">
           <a href="#" style={{ color: "#fff", transition: "opacity 0.2s" }} onMouseEnter={e => e.target.style.opacity = "0.7"} onMouseLeave={e => e.target.style.opacity = "1"} aria-label="Facebook">

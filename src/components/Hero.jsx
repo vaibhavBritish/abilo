@@ -13,7 +13,7 @@ export const Hero = () => {
     return () => clearTimeout(t);
   }, []);
 
-  const checks = ["Fully Insured & Bonded", "24/7 Moving Support", "No Hidden Fees"];
+  const checks = ["Licensed & Insured", "LTL Transportation", "Saskatchewan & Winnipeg"];
 
   return (
     <section
@@ -41,19 +41,19 @@ export const Hero = () => {
             {/* Top badge */}
             <div className="hero-badge" style={{ marginBottom: "1.25rem", fontSize: "0.78rem" }}>
               <Star size={14} weight="fill" />
-              &nbsp;#1 Moving Company in Canada · 5,000+ Successful Moves
+              &nbsp;#1 Logistics Partner in Saskatchewan · 10+ Years Experience
             </div>
 
             {/* Heading */}
             <h1 className="hero-title" style={{ marginBottom: "1.1rem" }}>
-              Canada's Most Trusted<br />
-              <span className="gradient-text">Moving Experts</span><br />
+              Reliable Moving &<br />
+              <span className="gradient-text">Trucking Services</span><br />
             </h1>
 
             {/* Sub-text */}
             <p style={{ fontSize: "1.05rem", color: "#E5E7EB", lineHeight: 1.75, marginBottom: "1.5rem", maxWidth: 480 }}>
-              Abilo provides stress-free residential and commercial moving solutions across Canada. 
-              Our professional team handles everything from packing to secure delivery.
+              TMM Logistics Inc provides expert residential moving and regional trucking solutions. 
+              Specializing in families, organizations, and LTL freight across Saskatchewan and Winnipeg.
             </p>
 
             {/* Check list */}
@@ -77,13 +77,13 @@ export const Hero = () => {
                 Get Free Quote <ArrowRight size={17} weight="bold" />
               </button>
               <a
-                href="tel:+1800555ABIL"
+                href="tel:+130609940409"
                 className="btn-outline"
                 data-testid="hero-call-btn"
                 style={{ display: "inline-flex", alignItems: "center", gap: 7, color: "#fff", borderColor: "rgba(255,255,255,0.4)" }}
               >
                 <Phone size={17} weight="fill" />
-                Call Now
+                Call 306-0994-0409
               </a>
             </div>
 
@@ -97,7 +97,7 @@ export const Hero = () => {
               ].map(({ value, label }) => (
                 <div key={label} className="hero-stat-pill">
                   <div>
-                    <div style={{ fontFamily: "Poppins, sans-serif", fontWeight: 800, fontSize: "1.25rem", color: "#FF5A00", lineHeight: 1 }}>
+                    <div style={{ fontFamily: "Poppins, sans-serif", fontWeight: 800, fontSize: "1.25rem", color: "var(--secondary)", lineHeight: 1 }}>
                       {value}
                     </div>
                     <div style={{ fontSize: "0.72rem", color: "#D1D5DB", marginTop: 2 }}>{label}</div>
@@ -145,8 +145,8 @@ export const Hero = () => {
               }}
             >
               <img
-                src="/hero-truck.png"
-                alt="Professional Abilo moving truck in a Canadian neighborhood"
+                src="/tmm-hero-truck.png"
+                alt="Professional TMM Logistics truck serving Saskatchewan and Winnipeg"
                 style={{ width: "100%", height: "auto", display: "block" }}
                 data-testid="hero-image"
               />
@@ -181,15 +181,15 @@ export const Hero = () => {
                   position: "absolute",
                   bottom: 16,
                   left: 16,
-                  background: "#ff5a00",
+                  background: "var(--secondary)",
                   borderRadius: 12,
                   padding: "8px 14px",
-                  boxShadow: "0 4px 16px rgba(255, 90, 0, 0.3)",
+                  boxShadow: "0 4px 16px rgba(234, 179, 8, 0.3)",
                   animation: "float 4s ease-in-out infinite 1s",
                 }}
               >
                 <div style={{ fontSize: "0.65rem", color: "rgba(255,255,255,0.75)" }}>Reliable</div>
-                <div style={{ fontWeight: 700, color: "#fff", fontSize: "0.82rem", fontFamily: "Poppins" }}>📦 Safe Handling</div>
+                <div style={{ fontWeight: 700, color: "#000", fontSize: "0.82rem", fontFamily: "Poppins" }}>📦 LTL Freight</div>
               </div>
             </div>
 
@@ -211,12 +211,12 @@ export const Hero = () => {
             >
               <div style={{ display: "flex", gap: 2 }}>
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} size={16} weight="fill" style={{ color: "#ff5a00" }} />
+                  <Star key={i} size={16} weight="fill" style={{ color: "var(--secondary)" }} />
                 ))}
               </div>
               <div style={{ fontSize: "0.9rem", fontWeight: 600, color: "#fff" }}>4.9/5</div>
               <div style={{ width: 1, height: 20, background: "#222" }} />
-              <div style={{ fontSize: "0.82rem", color: "#D1D5DB" }}>1,200+ Reviews across Canada</div>
+              <div style={{ fontSize: "0.82rem", color: "#D1D5DB" }}>Top Rated Logistics in Saskatchewan</div>
             </div>
           </div>
         </div>

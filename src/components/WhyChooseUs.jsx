@@ -10,35 +10,35 @@ export const WhyChooseUs = () => {
     { value: "15+", label: "Years Excellence", suffix: "" },
     { value: "5,000", label: "Happy Clients", suffix: "+" },
     { value: "100", label: "Safe Moves", suffix: "%" },
-    { value: "24/7", label: "Moving Support", suffix: "" },
+    { value: "24/7", label: "Client Support", suffix: "" },
   ];
 
   const features = [
     {
       icon: ShieldCheck,
       title: "Licensed & Insured",
-      desc: "Your move is 100% protected. We are fully licensed, insured, and bonded for local and long-distance moves across Canada.",
+      desc: "Your goods are 100% protected. We are fully licensed, insured, and bonded for moves across Western Canada.",
       color: "icon-blue",
       delay: "delay-100",
     },
     {
       icon: Clock,
       title: "Real-time Tracking",
-      desc: "Stay updated throughout your move. We provide real-time GPS tracking for our moving trucks during long-distance transits.",
+      desc: "Stay updated throughout your transit. We provide real-time GPS tracking for our trucking fleet during regional transport.",
       color: "icon-green",
       delay: "delay-200",
     },
     {
       icon: Medal,
       title: "Professional Movers",
-      desc: "Our team consists of highly trained, background-checked professional movers who handle your items with extreme care.",
-      color: "icon-orange",
+      desc: "Our team consists of highly trained, professional logistics experts who handle your items with extreme care.",
+      color: "icon-yellow",
       delay: "delay-300",
     },
     {
       icon: Tag,
       title: "Transparent Pricing",
-      desc: "No hidden fees. We provide clear, upfront moving quotes so you know exactly what you're paying for from start to finish.",
+      desc: "No hidden fees. We provide clear, upfront logistics quotes so you know exactly what you're paying for.",
       color: "icon-purple",
       delay: "delay-400",
     },
@@ -52,8 +52,8 @@ export const WhyChooseUs = () => {
     {
       icon: Star,
       title: "Top Rated Service",
-      desc: "Trusted by thousands of families and businesses across Canada for our reliable and premium relocation services.",
-      color: "icon-orange",
+      desc: "Trusted by families and organizations across Saskatchewan and Winnipeg for our reliable and premium logistics services.",
+      color: "icon-yellow",
       delay: "delay-200",
     },
   ];
@@ -100,14 +100,14 @@ export const WhyChooseUs = () => {
       <div style={{ padding: "5rem 0" }}>
         <div className="container-custom">
           <div className="reveal" style={{ textAlign: "center", marginBottom: "3.5rem" }}>
-            <div className="section-badge">
+            <div className="section-badge" style={{ background: "rgba(234, 179, 8, 0.1)", color: "var(--secondary)", border: "1px solid rgba(234, 179, 8, 0.2)" }}>
               <Medal size={14} weight="fill" />
-              Canada's Most Trusted Moving Company
+              Saskatchewan's Trusted Logistics Partner
             </div>
             <h2 className="section-title" style={{ color: "#FFFFFF" }}>
-              Why Choose Abilo
+              Why Choose TMM Logistics
             </h2>
-            <div className="divider" style={{ margin: "0.75rem auto 1rem" }} />
+            <div className="divider" style={{ background: "var(--secondary)", margin: "0.75rem auto 1rem" }} />
             <p className="section-subtitle" style={{ margin: "0 auto", color: "#D1D5DB" }}>
               We're committed to making your relocation stress-free, seamless,
               and efficient. Trust the experts for your next move.
@@ -128,7 +128,7 @@ export const WhyChooseUs = () => {
                 data-testid={`feature-card-${f.title.toLowerCase().replace(" ", "-")}`}
                 style={{ background: "var(--navy-mid)", border: "1px solid rgba(255,255,255,0.05)" }}
               >
-                <div className={`icon-box ${f.color}`}>
+                <div className={`icon-box ${f.color}`} style={{ color: "var(--secondary)", background: "rgba(234, 179, 8, 0.1)" }}>
                   <f.icon size={26} weight="duotone" />
                 </div>
                 <h3

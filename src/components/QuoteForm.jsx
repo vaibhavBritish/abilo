@@ -78,28 +78,28 @@ export const QuoteForm = () => {
             <div
               style={{
                 width: 72, height: 72,
-                background: "rgba(255, 90, 0, 0.1)",
+                background: "rgba(234, 179, 8, 0.1)",
                 borderRadius: 4,
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
                 margin: "0 auto 1.5rem",
-                border: "1px solid #ff5a00",
+                border: "1px solid var(--secondary)",
               }}
             >
-              <Check size={36} weight="bold" style={{ color: "#ff5a00" }} />
+              <Check size={36} weight="bold" style={{ color: "var(--secondary)" }} />
             </div>
             <h3 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 700, fontSize: "1.5rem", color: "#FFFFFF", marginBottom: "0.75rem" }}>
               Request Received! 📦
             </h3>
             <p style={{ color: "#D1D5DB", marginBottom: "1.5rem", lineHeight: 1.7 }}>
-              Thank you for choosing Abilo Moving & Storage. Our relocation experts will review your details and
+              Thank you for choosing TMM Logistics Inc. Our logistics experts will review your details and
               contact you within 2 hours with a detailed estimate.
             </p>
             <button
               onClick={() => { setSubmitted(false); setFormData({ full_name: "", phone_number: "", email: "", current_address: "", new_address: "", move_type: "", moving_date: null, additional_details: "" }); }}
               className="btn-primary"
-              style={{ background: "#ff5a00", color: "#000", border: "none", padding: "12px 24px", borderRadius: 4, fontWeight: 700 }}
+              style={{ background: "var(--secondary)", color: "#000", border: "none", padding: "12px 24px", borderRadius: 4, fontWeight: 700 }}
               data-testid="submit-another-quote-btn"
             >
               Submit Another Request
@@ -120,11 +120,11 @@ export const QuoteForm = () => {
         <div style={{ maxWidth: 680, margin: "0 auto" }}>
           {/* Form Header */}
           <div style={{ textAlign: "center", marginBottom: "2.5rem" }}>
-            <div className="section-badge" style={{ background: "rgba(255, 90, 0, 0.1)", color: "#ff5a00", border: "1px solid rgba(255, 90, 0, 0.2)", justifyContent: "center" }}>
-              📝 Free Moving Quote
+            <div className="section-badge" style={{ background: "rgba(234, 179, 8, 0.1)", color: "var(--secondary)", border: "1px solid rgba(234, 179, 8, 0.2)", justifyContent: "center" }}>
+              📝 Free Logistics Quote
             </div>
             <h2 className="section-title" style={{ color: "#111827" }}>Plan Your Move with Precision</h2>
-            <div className="divider" style={{ background: "#ff5a00", margin: "0.75rem auto 1rem" }} />
+            <div className="divider" style={{ background: "var(--secondary)", margin: "0.75rem auto 1rem" }} />
             <p className="section-subtitle" style={{ color: "#4B5563", margin: "0 auto" }}>
               Fill in the details below and we'll provide you with a customized relocation quote within 2 hours.
             </p>
@@ -144,7 +144,7 @@ export const QuoteForm = () => {
                   onChange={handleInputChange}
                   placeholder="Enter your name"
                   required
-                  className="rounded-sm border-white/10 bg-black/20 text-white focus:border-[#ff5a00] focus:ring-[#ff5a00]"
+                  className="rounded-sm border-white/10 bg-black/20 text-white focus:border-[var(--secondary)] focus:ring-[var(--secondary)]"
                   data-testid="quote-full-name-input"
                 />
               </div>
@@ -156,9 +156,9 @@ export const QuoteForm = () => {
                   name="phone_number"
                   value={formData.phone_number}
                   onChange={handleInputChange}
-                  placeholder="+1-800-555-ABIL"
+                  placeholder="+1-306-0994-0409"
                   required
-                  className="rounded-sm border-white/10 bg-black/20 text-white focus:border-[#ff5a00] focus:ring-[#ff5a00]"
+                  className="rounded-sm border-white/10 bg-black/20 text-white focus:border-[var(--secondary)] focus:ring-[var(--secondary)]"
                   data-testid="quote-phone-input"
                 />
               </div>
@@ -176,7 +176,7 @@ export const QuoteForm = () => {
                 onChange={handleInputChange}
                 placeholder="your@email.com"
                 required
-                className="rounded-sm border-white/10 bg-black/20 text-white focus:border-[#ff5a00] focus:ring-[#ff5a00]"
+                className="rounded-sm border-white/10 bg-black/20 text-white focus:border-[var(--secondary)] focus:ring-[var(--secondary)]"
                 data-testid="quote-email-input"
               />
             </div>
@@ -193,7 +193,7 @@ export const QuoteForm = () => {
                   onChange={handleInputChange}
                   placeholder="Street address, City"
                   required
-                  className="rounded-sm border-white/10 bg-black/20 text-white focus:border-[#ff5a00] focus:ring-[#ff5a00]"
+                  className="rounded-sm border-white/10 bg-black/20 text-white focus:border-[var(--secondary)] focus:ring-[var(--secondary)]"
                   data-testid="quote-departure-input"
                 />
               </div>
@@ -207,7 +207,7 @@ export const QuoteForm = () => {
                   onChange={handleInputChange}
                   placeholder="Street address, City"
                   required
-                  className="rounded-sm border-white/10 bg-black/20 text-white focus:border-[#ff5a00] focus:ring-[#ff5a00]"
+                  className="rounded-sm border-white/10 bg-black/20 text-white focus:border-[var(--secondary)] focus:ring-[var(--secondary)]"
                   data-testid="quote-destination-input"
                 />
               </div>
@@ -231,10 +231,10 @@ export const QuoteForm = () => {
                   </SelectTrigger>
                   <SelectContent>
                     <SelectItem value="residential">Residential Move</SelectItem>
+                    <SelectItem value="trucking">Trucking Services</SelectItem>
+                    <SelectItem value="ltl">LTL Transportation</SelectItem>
                     <SelectItem value="commercial">Commercial/Office Move</SelectItem>
-                    <SelectItem value="long_distance">Long Distance Move</SelectItem>
-                    <SelectItem value="packing_only">Packing Only</SelectItem>
-                    <SelectItem value="storage_only">Storage Only</SelectItem>
+                    <SelectItem value="warehousing">Warehousing & Storage</SelectItem>
                     <SelectItem value="other">Other</SelectItem>
                   </SelectContent>
                 </Select>
@@ -247,7 +247,7 @@ export const QuoteForm = () => {
                   <PopoverTrigger asChild>
                     <Button
                       variant="outline"
-                      className="w-full justify-start text-left font-normal rounded-sm border-white/10 bg-black/20 text-white hover:border-[#ff5a00]/30 hover:bg-black/40"
+                      className="w-full justify-start text-left font-normal rounded-sm border-white/10 bg-black/20 text-white hover:border-[var(--secondary)]/30 hover:bg-black/40"
                       data-testid="quote-date-picker-btn"
                     >
                       <CalendarBlank className="mr-2 h-4 w-4" />
@@ -286,7 +286,7 @@ export const QuoteForm = () => {
                 onChange={handleInputChange}
                 placeholder="List major items, floor levels, or special requirements..."
                 rows={4}
-                className="rounded-sm border-white/10 bg-black/20 text-white focus:border-[#ff5a00] focus:ring-[#ff5a00]"
+                className="rounded-sm border-white/10 bg-black/20 text-white focus:border-[var(--secondary)] focus:ring-[var(--secondary)]"
                 data-testid="quote-details-textarea"
               />
             </div>
@@ -296,7 +296,7 @@ export const QuoteForm = () => {
               type="submit"
               disabled={loading || !formData.full_name || !formData.phone_number || !formData.email || !formData.current_address || !formData.new_address || !formData.move_type}
               className="btn-primary"
-              style={{ width: "100%", background: "#ff5a00", color: "#000", border: "none", justifyContent: "center", padding: "16px", fontSize: "1rem", fontWeight: 700, borderRadius: 4, opacity: (loading || !formData.full_name || !formData.phone_number || !formData.email || !formData.current_address || !formData.new_address || !formData.move_type) ? 0.6 : 1 }}
+              style={{ width: "100%", background: "var(--secondary)", color: "#000", border: "none", justifyContent: "center", padding: "16px", fontSize: "1rem", fontWeight: 700, borderRadius: 4, opacity: (loading || !formData.full_name || !formData.phone_number || !formData.email || !formData.current_address || !formData.new_address || !formData.move_type) ? 0.6 : 1 }}
               data-testid="quote-submit-btn"
             >
               {loading ? (
