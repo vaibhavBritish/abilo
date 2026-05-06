@@ -9,50 +9,50 @@ export const Services = () => {
   const services = [
     {
       icon: House,
-      title: "Local Moving",
-      description: "Fast and efficient residential moving services within your city. We handle your belongings with care.",
-      features: ["House & Apartment", "Same-day service", "Furniture assembly"],
-      color: "icon-blue",
+      title: "Residential Moving",
+      description: "Fast and efficient residential moving services in Saskatchewan and Winnipeg. We handle your family's belongings with utmost care.",
+      features: ["House & Apartment", "Local expertise", "Furniture assembly"],
+      color: "icon-green",
       delay: "delay-100",
     },
     {
-      icon: Globe,
-      title: "Long Distance Moving",
-      description: "Provincial and national moving services across Canada. Secure transport for your cross-country move.",
-      features: ["Inter-provincial", "GPS tracking", "Scheduled delivery"],
-      color: "icon-orange",
+      icon: Truck,
+      title: "Regional Trucking",
+      description: "Dedicated trucking services across Western Canada. Reliable and on-time transportation for your regional needs.",
+      features: ["Saskatchewan routes", "Winnipeg connections", "Scheduled freight"],
+      color: "icon-yellow",
       delay: "delay-200",
     },
     {
       icon: Buildings,
-      title: "Office Relocation",
-      description: "Professional commercial moving services. We minimize downtime for your business during the move.",
-      features: ["IT equipment handling", "After-hours moving", "Project management"],
+      title: "Commercial Moving",
+      description: "Professional business and office relocation services. We minimize downtime and ensure a smooth transition.",
+      features: ["Office equipment", "After-hours moving", "Asset management"],
       color: "icon-green",
       delay: "delay-300",
     },
     {
       icon: Package,
-      title: "Packing Services",
-      description: "Expert packing and unpacking services. We use premium materials to keep your items safe during transit.",
-      features: ["Full & partial packing", "Fragile item care", "Packing supplies"],
+      title: "LTL Transportation",
+      description: "Efficient Less-Than-Truckload services for warehouses and businesses needing regional transportation.",
+      features: ["Cost-effective", "Regular schedules", "Small load specialists"],
       color: "icon-purple",
       delay: "delay-100",
     },
     {
       icon: Warehouse,
-      title: "Storage Solutions",
-      description: "Secure, climate-controlled storage for your short-term or long-term needs during your relocation.",
-      features: ["24/7 security", "Climate control", "Flexible terms"],
+      title: "Warehousing & Storage",
+      description: "Secure warehousing solutions for regional distribution and long-term storage needs.",
+      features: ["Secure facility", "Flexible storage", "Inventory support"],
       color: "icon-blue",
       delay: "delay-200",
     },
     {
-      icon: PianoKeys,
-      title: "Specialty Moving",
-      description: "Specialized handling for heavy or delicate items like pianos, fine art, and high-value equipment.",
-      features: ["Piano moving", "Fine art crating", "White glove service"],
-      color: "icon-orange",
+      icon: Globe,
+      title: "Specialized Logistics",
+      description: "Custom logistics solutions tailored to organizations and high-volume transportation needs.",
+      features: ["Project logistics", "Dedicated support", "Western Canada reach"],
+      color: "icon-yellow",
       delay: "delay-300",
     },
   ];
@@ -72,12 +72,12 @@ export const Services = () => {
             Our Services
           </div>
           <h2 className="section-title">
-            Full-Service Moving Solutions in Canada
+            Professional Moving & Trucking Solutions
           </h2>
           <div className="divider" style={{ margin: "0.75rem auto 1rem" }} />
           <p className="section-subtitle" style={{ margin: "0 auto" }}>
-            From local apartment moves to cross-country office relocations, Abilo provides 
-            end-to-end moving and storage services tailored to your needs.
+            From residential relocation to regional trucking and LTL freight, TMM Logistics Inc 
+            provides expert transportation services across Saskatchewan and Winnipeg.
           </p>
         </div>
 
@@ -113,7 +113,7 @@ export const Services = () => {
 
               <div style={{ display: "flex", flexWrap: "wrap", gap: "0.4rem" }}>
                 {svc.features.map((f) => (
-                  <span key={f} className="service-feature-tag" style={{ background: "rgba(255, 90, 0, 0.05)", color: "#4B5563", border: "1px solid rgba(255, 90, 0, 0.15)" }}>
+                  <span key={f} className="service-feature-tag" style={{ background: "var(--primary-light)", color: "var(--primary-dark)", border: "1px solid var(--primary-light)" }}>
                     <Check size={11} weight="bold" />
                     {f}
                   </span>

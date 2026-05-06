@@ -41,7 +41,7 @@ export const TrustSection = () => {
         <div
           className="reveal"
           style={{
-            background: "linear-gradient(135deg, #FF5A00 0%, #CC4800 100%)",
+            background: "linear-gradient(135deg, var(--secondary) 0%, #D1A000 100%)",
             borderRadius: "20px",
             padding: "3rem 2.5rem",
             display: "flex",
@@ -50,11 +50,11 @@ export const TrustSection = () => {
             alignItems: "center",
             justifyContent: "space-between",
             marginBottom: "4rem",
-            boxShadow: "0 20px 40px rgba(255, 90, 0, 0.2)",
+            boxShadow: "0 20px 40px rgba(234, 179, 8, 0.2)",
           }}
         >
           <div>
-            <div style={{ color: "rgba(255,255,255,0.8)", fontSize: "0.85rem", fontWeight: 600, marginBottom: "0.5rem" }}>
+            <div style={{ color: "rgba(0,0,0,0.6)", fontSize: "0.85rem", fontWeight: 600, marginBottom: "0.5rem" }}>
               ⚡ Fast Response · Licensed & Insured
             </div>
             <h2
@@ -62,11 +62,11 @@ export const TrustSection = () => {
                 fontFamily: "Poppins, sans-serif",
                 fontWeight: 700,
                 fontSize: "clamp(1.4rem, 3vw, 2rem)",
-                color: "#fff",
+                color: "#000",
                 margin: "0 0 0.75rem",
               }}
             >
-              Get a Free Moving Quote Today
+              Get a Free Logistics Quote Today
             </h2>
             <div style={{ display: "flex", flexWrap: "wrap", gap: "1rem" }}>
               {["No obligation", "Same-day response", "Guaranteed pricing"].map((t) => (
@@ -76,11 +76,11 @@ export const TrustSection = () => {
                     display: "flex",
                     alignItems: "center",
                     gap: 6,
-                    color: "rgba(255,255,255,0.9)",
+                    color: "rgba(0,0,0,0.7)",
                     fontSize: "0.85rem",
                   }}
                 >
-                  <CheckCircle size={16} weight="fill" style={{ color: "#FFFFFF" }} />
+                  <CheckCircle size={16} weight="fill" style={{ color: "#000" }} />
                   {t}
                 </span>
               ))}
@@ -88,13 +88,13 @@ export const TrustSection = () => {
           </div>
           <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
             <a
-              href="tel:+1800555ABIL"
+              href="tel:+130609940409"
               style={{
                 display: "inline-flex",
                 alignItems: "center",
                 gap: 8,
                 background: "#000000",
-                color: "#ff5a00",
+                color: "var(--secondary)",
                 padding: "14px 28px",
                 borderRadius: "8px",
                 fontWeight: 700,
@@ -105,7 +105,7 @@ export const TrustSection = () => {
                 border: "2px solid #000000",
               }}
               onMouseEnter={(e) => { e.currentTarget.style.background = "#111"; e.currentTarget.style.color = "#fff"; }}
-              onMouseLeave={(e) => { e.currentTarget.style.background = "#000"; e.currentTarget.style.color = "#ff5a00"; }}
+              onMouseLeave={(e) => { e.currentTarget.style.background = "#000"; e.currentTarget.style.color = "var(--secondary)"; }}
             >
               📞 Call Now
             </a>
@@ -117,17 +117,17 @@ export const TrustSection = () => {
                 alignItems: "center",
                 gap: 8,
                 background: "transparent",
-                color: "#fff",
+                color: "#000",
                 padding: "14px 28px",
                 borderRadius: "8px",
                 fontWeight: 700,
                 textDecoration: "none",
                 fontSize: "0.95rem",
-                border: "2px solid rgba(255,255,255,0.5)",
+                border: "2px solid rgba(0,0,0,0.3)",
                 transition: "all 0.3s",
                 whiteSpace: "nowrap",
               }}
-              onMouseEnter={(e) => e.currentTarget.style.background = "rgba(255,255,255,0.1)"}
+              onMouseEnter={(e) => e.currentTarget.style.background = "rgba(0,0,0,0.05)"}
               onMouseLeave={(e) => e.currentTarget.style.background = "transparent"}
             >
               Get Quote <ArrowRight size={16} weight="bold" />
@@ -178,7 +178,7 @@ export const TrustSection = () => {
                   alignItems: "center",
                   justifyContent: "center",
                   margin: "0 auto 1.25rem",
-                  boxShadow: "0 0 0 8px rgba(245, 158, 11, 0.15)",
+                  boxShadow: "0 0 0 8px rgba(234, 179, 8, 0.15)",
                 }}
               >
                 {s.num}

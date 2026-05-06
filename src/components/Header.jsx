@@ -51,11 +51,11 @@ export const Header = () => {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
             <div className="flex flex-col leading-none">
-              <span className="text-2xl md:text-[38.5px] font-black text-navy font-poppins tracking-tighter uppercase">
-                Abilo
+              <span className="text-2xl md:text-[32px] font-black text-navy font-poppins tracking-tighter uppercase">
+                TMM Logistics
               </span>
-              <span className="text-[10px] md:text-[14.5px] font-bold text-primary uppercase tracking-[0.25em] -mt-0.5">
-                Moving & Storage
+              <span className="text-[10px] md:text-[12px] font-bold text-primary uppercase tracking-[0.25em] -mt-0.5">
+                Moving & Trucking Services
               </span>
             </div>
           </Link>
@@ -79,16 +79,16 @@ export const Header = () => {
           {/* Desktop Right */}
           <div className="hidden md:flex items-center gap-4">
             <a
-              href="tel:+1800555ABIL"
+              href="tel:+130609940409"
               className="text-sm font-bold text-[#000814] hover:text-primary transition-colors"
             >
-              📞 +1-800-555-ABIL
+              📞 +1-306-0994-0409
             </a>
             <button
               onClick={handleGetQuote}
               className="bg-[#000814] hover:bg-black text-white px-6 py-2.5 rounded-md font-bold text-sm transition-all duration-200 shadow-sm hover:shadow-md"
             >
-              Book Your Move
+              Book A Service
             </button>
           </div>
 
@@ -120,10 +120,10 @@ export const Header = () => {
             <div className="flex items-center justify-center gap-3 mb-10 mt-4">
               <div className="flex flex-col leading-none text-left">
                 <span className="text-3xl font-black text-navy font-poppins tracking-tighter uppercase">
-                  Abilo
+                  TMM Logistics
                 </span>
                 <span className="text-[11px] font-bold text-primary uppercase tracking-widest -mt-0.5">
-                  Moving & Storage
+                  Moving & Trucking Services
                 </span>
               </div>
             </div>
@@ -151,10 +151,10 @@ export const Header = () => {
                 onClick={handleGetQuote}
                 className="w-full bg-primary hover:bg-primary-dark text-white py-4 rounded-full text-lg font-medium transition-colors"
               >
-                Book Your Move
+                Book A Service
               </button>
               <a
-                href="tel:+1800555ABIL"
+                href="tel:+130609940409"
                 className="w-full border border-gray-200 py-4 rounded-full text-center text-lg font-bold text-[#001219]"
               >
                 📞 Call Now

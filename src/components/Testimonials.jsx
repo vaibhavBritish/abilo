@@ -19,9 +19,9 @@ export const Testimonials = () => {
     {
       name: "Sarah Jenkins",
       initial: "S",
-      location: "Toronto → Mississauga",
+      location: "Saskatoon → Winnipeg",
       rating: 5,
-      text: "Excellent service! The team was punctual, professional, and handled all my furniture with great care. Highly recommend Abilo Moving for anyone looking for reliable movers in the GTA.",
+      text: "Excellent service! The team was punctual, professional, and handled all my furniture with great care. Highly recommend TMM Logistics for anyone looking for reliable movers in Western Canada.",
       date: "January 2026",
       avatarColor: avatarColors[0],
     },
@@ -37,36 +37,36 @@ export const Testimonials = () => {
     {
       name: "Emily Rodriguez",
       initial: "E",
-      location: "Toronto → Vancouver",
+      location: "Regina → Saskatoon",
       rating: 5,
-      text: "Moved across the country with Abilo. The GPS tracking was really helpful for peace of mind. All items arrived safely and on schedule. Pricing was transparent and fair.",
+      text: "Moved across the province with TMM Logistics. The tracking was really helpful for peace of mind. All items arrived safely and on schedule. Pricing was transparent and fair.",
       date: "January 2026",
       avatarColor: avatarColors[2],
     },
     {
       name: "David Wilson",
       initial: "D",
-      location: "Scarborough → North York",
+      location: "Warehouse Distribution",
       rating: 5,
-      text: "Reliable and fast. The team was very professional and handled our household goods with care. Best rates I found in Toronto for full-service moving.",
+      text: "Reliable LTL service. The team was very professional and handled our freight with care. Best rates I found in Saskatchewan for logistics support.",
       date: "February 2026",
       avatarColor: avatarColors[3],
     },
     {
       name: "Jessica Lee",
       initial: "J",
-      location: "Etobicoke Local Move",
+      location: "Saskatoon Local Move",
       rating: 5,
-      text: "Stress-free moving experience. Abilo made it so easy from the initial quote to the final box. Very polite and efficient staff.",
+      text: "Stress-free moving experience. TMM Logistics made it so easy from the initial quote to the final box. Very polite and efficient staff.",
       date: "March 2026",
       avatarColor: avatarColors[4],
     },
     {
       name: "Robert Chen",
       initial: "R",
-      location: "Brampton → Oakville",
+      location: "Industrial Client",
       rating: 5,
-      text: "Great local moving experience. No damage to my fragile items and the team was incredibly quick. Highly recommended for any move in Ontario!",
+      text: "Great trucking experience. No damage to my freight and the team was incredibly quick. Highly recommended for any logistics in the prairies!",
       date: "February 2026",
       avatarColor: avatarColors[0],
     },
@@ -81,12 +81,12 @@ export const Testimonials = () => {
       <div className="container-custom">
         {/* Header */}
         <div className="reveal" style={{ textAlign: "center", marginBottom: "3.5rem" }}>
-          <div className="section-badge" style={{ background: "rgba(255, 90, 0, 0.1)", color: "#ff5a00", border: "1px solid rgba(255, 90, 0, 0.2)", justifyContent: "center" }}>
+          <div className="section-badge" style={{ background: "rgba(234, 179, 8, 0.1)", color: "var(--secondary)", border: "1px solid rgba(234, 179, 8, 0.2)", justifyContent: "center" }}>
             <Star size={14} weight="fill" />
             Testimonials
           </div>
           <h2 className="section-title" style={{ color: "#111827" }}>What Our Clients Say</h2>
-          <div className="divider" style={{ background: "#ff5a00", margin: "0.75rem auto 1rem" }} />
+          <div className="divider" style={{ background: "var(--secondary)", margin: "0.75rem auto 1rem" }} />
           <p className="section-subtitle" style={{ color: "#374151", margin: "0 auto" }}>
             Real reviews from real clients across Canada. Your trust is our greatest achievement.
           </p>
@@ -109,10 +109,10 @@ export const Testimonials = () => {
                   data-testid={`testimonial-${i}`}
                 >
                   <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
-                    <Quotes size={32} weight="fill" style={{ color: "rgba(255, 90, 0, 0.1)" }} />
+                     <Quotes size={32} weight="fill" style={{ color: "rgba(234, 179, 8, 0.1)" }} />
                     <div style={{ display: "flex", gap: 2 }}>
                       {[...Array(t.rating)].map((_, j) => (
-                        <Star key={j} size={15} weight="fill" style={{ color: "#ff5a00" }} />
+                        <Star key={j} size={15} weight="fill" style={{ color: "var(--secondary)" }} />
                       ))}
                     </div>
                   </div>
@@ -139,7 +139,7 @@ export const Testimonials = () => {
                       borderTop: "1px solid #F3F4F6",
                     }}
                   >
-                    <div style={{ width: 40, height: 40, borderRadius: "50%", background: "rgba(255, 90, 0, 0.1)", color: "#ff5a00", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontFamily: "Poppins", flexShrink: 0, border: "1px solid #ff5a00" }}>
+                    <div style={{ width: 40, height: 40, borderRadius: "50%", background: "rgba(234, 179, 8, 0.1)", color: "var(--secondary)", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontFamily: "Poppins", flexShrink: 0, border: "1px solid var(--secondary)" }}>
                       {t.initial}
                     </div>
                     <div>

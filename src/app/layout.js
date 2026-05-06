@@ -6,22 +6,22 @@ import { Footer } from "@/components/Footer";
 import { LeadForm } from "@/components/LeadForm";
 
 export const metadata = {
-  title: "Abilo - Canada's Most Trusted Packers and Movers",
-  description: "Abilo provides premium residential and commercial moving services across Canada. Licensed, insured, and bonded movers for local and long-distance relocation.",
+  title: "TMM Logistics Inc - Premier Moving & Trucking Services",
+  description: "TMM Logistics Inc provides professional moving, trucking, and LTL services across Saskatchewan and Winnipeg. Your trusted partner for residential and commercial relocation.",
   alternates: {
-    canonical: "https://abilo.ca/",
+    canonical: "https://tmmgroup.ca/",
   },
   openGraph: {
-    title: "Abilo - Canada's Most Trusted Packers and Movers",
-    description: "Abilo provides premium residential and commercial moving services across Canada. Licensed, insured, and bonded movers for local and long-distance relocation.",
-    url: "https://abilo.ca/",
-    siteName: "Abilo Moving and Storage",
+    title: "TMM Logistics Inc - Premier Moving & Trucking Services",
+    description: "TMM Logistics Inc provides professional moving, trucking, and LTL services across Saskatchewan and Winnipeg. Your trusted partner for residential and commercial relocation.",
+    url: "https://tmmgroup.ca/",
+    siteName: "TMM Logistics Inc",
     images: [
       {
-        url: "https://abilo.ca/hero-truck.png",
+        url: "https://tmmgroup.ca/hero-truck.png",
         width: 1200,
         height: 630,
-        alt: "Abilo Moving and Storage - Canada",
+        alt: "TMM Logistics Inc - Moving and Trucking Services",
       },
     ],
     locale: "en_CA",
@@ -32,7 +32,7 @@ export const metadata = {
     shortcut: "/favicon-main.png",
     apple: "/favicon-main.png",
   },
-  keywords: "packers and movers Canada, moving services Toronto, local movers Vancouver, long distance moving Canada, office relocation Calgary, residential moving, storage solutions Canada, Abilo moving",
+  keywords: "moving services Saskatchewan, trucking Winnipeg, LTL transportation, TMM Logistics, commercial moving Saskatchewan, residential movers Winnipeg, freight services Canada",
 };
 
 export const viewport = {
@@ -72,23 +72,23 @@ export default function RootLayout({ children }) {
             {
               "@context": "https://schema.org",
               "@type": ["LocalBusiness", "MovingCompany"],
-              "name": "Abilo Moving and Storage",
-              "url": "https://abilo.ca",
-              "telephone": "+1-800-555-ABIL",
+              "name": "TMM Logistics Inc",
+              "url": "https://tmmgroup.ca",
+              "telephone": "+1-306-0994-0409",
               "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "123 Maple Street",
-                "addressLocality": "Toronto",
-                "addressRegion": "Ontario",
-                "postalCode": "M5V 2L7",
+                "streetAddress": "Saskatchewan and Winnipeg Areas",
+                "addressLocality": "Saskatoon",
+                "addressRegion": "Saskatchewan",
+                "postalCode": "S7K 0T0",
                 "addressCountry": "CA"
               },
-              "areaServed": "Canada",
+              "areaServed": ["Saskatchewan", "Winnipeg"],
               "priceRange": "$$",
               "aggregateRating": {
                 "@type": "AggregateRating",
                 "ratingValue": "4.9",
-                "reviewCount": "150"
+                "reviewCount": "250"
               }
             }
           `}
@@ -116,7 +116,7 @@ export default function RootLayout({ children }) {
 
 const WhatsAppButton = () => (
   <a
-    href="https://wa.me/18005552245?text=Hello%20Abilo%2C%20I%20would%20like%20to%20get%20a%20moving%20quote."
+    href="https://wa.me/130609940409?text=Hello%20TMM%20Logistics%2C%20I%20would%20like%20to%20get%20a%20logistics%20quote."
     target="_blank"
     rel="noopener noreferrer"
     className="whatsapp-float"
