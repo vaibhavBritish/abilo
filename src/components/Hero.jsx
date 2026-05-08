@@ -13,7 +13,7 @@ export const Hero = () => {
     return () => clearTimeout(t);
   }, []);
 
-  const checks = ["Licensed & Insured", "LTL Transportation", "Saskatchewan & Winnipeg"];
+  const checks = ["Licensed & Insured", "Packing & Supplies", "Saskatchewan & Winnipeg"];
 
   return (
     <section
@@ -41,19 +41,19 @@ export const Hero = () => {
             {/* Top badge */}
             <div className="hero-badge" style={{ marginBottom: "1.25rem", fontSize: "0.78rem" }}>
               <Star size={14} weight="fill" />
-              &nbsp;#1 Logistics Partner in Saskatchewan · 10+ Years Experience
+              &nbsp;#1 Moving Company in Saskatchewan · 10+ Years Experience
             </div>
 
             {/* Heading */}
             <h1 className="hero-title" style={{ marginBottom: "1.1rem" }}>
-              Reliable Moving &<br />
-              <span className="gradient-text">Trucking Services</span><br />
+              Saskatchewan's #1<br />
+              <span className="gradient-text">Professional Movers</span><br />
             </h1>
 
             {/* Sub-text */}
             <p style={{ fontSize: "1.05rem", color: "#E5E7EB", lineHeight: 1.75, marginBottom: "1.5rem", maxWidth: 480 }}>
-              TMM Logistics Inc provides expert residential moving and regional trucking solutions. 
-              Specializing in families, organizations, and LTL freight across Saskatchewan and Winnipeg.
+              TMM Moving & Storage delivers stress-free home and office relocation. 
+              White-glove service for families, seniors, and businesses across Saskatchewan and Winnipeg.
             </p>
 
             {/* Check list */}
@@ -145,8 +145,8 @@ export const Hero = () => {
               }}
             >
               <img
-                src="/tmm-hero-truck.png"
-                alt="Professional TMM Logistics truck serving Saskatchewan and Winnipeg"
+                src="/tmm-hero-moving.png"
+                alt="Professional TMM Moving team serving Saskatchewan and Winnipeg"
                 style={{ width: "100%", height: "auto", display: "block" }}
                 data-testid="hero-image"
               />
@@ -188,8 +188,8 @@ export const Hero = () => {
                   animation: "float 4s ease-in-out infinite 1s",
                 }}
               >
-                <div style={{ fontSize: "0.65rem", color: "rgba(255,255,255,0.75)" }}>Reliable</div>
-                <div style={{ fontWeight: 700, color: "#000", fontSize: "0.82rem", fontFamily: "Poppins" }}>📦 LTL Freight</div>
+                <div style={{ fontSize: "0.65rem", color: "rgba(255,255,255,0.75)" }}>Trusted</div>
+                <div style={{ fontWeight: 700, color: "#000", fontSize: "0.82rem", fontFamily: "Poppins" }}>📦 Home Moving</div>
               </div>
             </div>
 
@@ -216,7 +216,7 @@ export const Hero = () => {
               </div>
               <div style={{ fontSize: "0.9rem", fontWeight: 600, color: "#fff" }}>4.9/5</div>
               <div style={{ width: 1, height: 20, background: "#222" }} />
-              <div style={{ fontSize: "0.82rem", color: "#D1D5DB" }}>Top Rated Logistics in Saskatchewan</div>
+              <div style={{ fontSize: "0.82rem", color: "#D1D5DB" }}>Top Rated Movers in Saskatchewan</div>
             </div>
           </div>
         </div>

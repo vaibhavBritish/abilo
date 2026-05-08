@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
+import { Phone, List, X, MapPin, EnvelopeSimple, FacebookLogo, InstagramLogo } from "@phosphor-icons/react";
 
 export const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -11,7 +12,7 @@ export const Header = () => {
   const router = useRouter();
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 20);
+    const handleScroll = () => setScrolled(window.scrollY > 40);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -22,147 +23,161 @@ export const Header = () => {
 
   const navItems = [
     { label: "Home", href: "/" },
-    { label: "Services", href: "/services" },
+    { label: "Moving Services", href: "/moving-services" },
     { label: "About", href: "/about" },
-    { label: "Gallery", href: "/gallery" },
     { label: "Testimonials", href: "/testimonials" },
+    { label: "Gallery", href: "/gallery" },
     { label: "Contact", href: "/contact" },
   ];
 
   const isActive = (href) =>
     href === "/" ? pathname === "/" : pathname.startsWith(href);
 
-  const handleGetQuote = () => {
-    setMobileOpen(false);
-    router.push("/get-quote");
-  };
-
   return (
     <>
-
-      {/* Main Header */}
-      <header
-        className={`sticky top-0 z-50 transition-all duration-300 ${scrolled
-          ? "bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-100"
-          : "bg-white border-b border-gray-50"
+      <header className="fixed top-0 left-0 right-0 z-[100] w-full">
+        {/* Top Info Bar - Hides on Scroll */}
+        <div 
+          className={`bg-navy text-white/80 py-2 transition-all duration-500 overflow-hidden ${
+            scrolled ? "max-h-0 opacity-0" : "max-h-20 opacity-100"
           }`}
-      >
-        <div className="max-w-7xl mx-auto flex items-center justify-between px-4 md:px-6 h-20 md:h-24 ">
-          {/* Logo */}
-          <Link href="/" className="flex items-center gap-3">
-            <div className="flex flex-col leading-none">
-              <span className="text-2xl md:text-[32px] font-black text-navy font-poppins tracking-tighter uppercase">
-                TMM Logistics
-              </span>
-              <span className="text-[10px] md:text-[12px] font-bold text-primary uppercase tracking-[0.25em] -mt-0.5">
-                Moving & Trucking Services
-              </span>
-            </div>
-          </Link>
-
-          {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center">
-            {navItems.map((item) => (
-              <Link
-                key={item.label}
-                href={item.href}
-                className={`px-3 py-2 rounded-md text-sm font-bold transition-all duration-200 ${isActive(item.href)
-                  ? "text-primary"
-                  : "text-[#000814] hover:text-primary"
-                  }`}
-              >
-                {item.label}
-              </Link>
-            ))}
-          </nav>
-
-          {/* Desktop Right */}
-          <div className="hidden md:flex items-center gap-4">
-            <a
-              href="tel:+130609940409"
-              className="text-sm font-bold text-[#000814] hover:text-primary transition-colors"
-            >
-              📞 +1-306-0994-0409
-            </a>
-            <button
-              onClick={handleGetQuote}
-              className="bg-[#000814] hover:bg-black text-white px-6 py-2.5 rounded-md font-bold text-sm transition-all duration-200 shadow-sm hover:shadow-md"
-            >
-              Book A Service
-            </button>
+        >
+          <div className="container-custom flex items-center justify-between text-[0.75rem] font-bold tracking-wider uppercase">
+             <div className="flex items-center gap-6">
+               <span className="flex items-center gap-2">
+                 <MapPin size={14} weight="fill" className="text-primary" />
+                 Saskatchewan & Winnipeg
+               </span>
+               <a href="mailto:movemate@tmmgroup.ca" className="hidden sm:flex items-center gap-2 text-white/80 no-underline hover:text-primary">
+                 <EnvelopeSimple size={14} weight="fill" className="text-primary" />
+                 movemate@tmmgroup.ca
+               </a>
+             </div>
+             <div className="flex items-center gap-4">
+               <a href="#" className="text-white/60 hover:text-primary transition-colors"><FacebookLogo size={16} weight="fill" /></a>
+               <a href="#" className="text-white/60 hover:text-primary transition-colors"><InstagramLogo size={16} weight="fill" /></a>
+             </div>
           </div>
-
-          <button
-            onClick={() => setMobileOpen(!mobileOpen)}
-            className="md:hidden flex flex-col gap-1 p-2"
-          >
-            <span className="w-6 h-0.5 bg-zinc-900"></span>
-            <span className="w-6 h-0.5 bg-zinc-900"></span>
-            <span className="w-6 h-0.5 bg-zinc-900"></span>
-          </button>
         </div>
-      </header>
 
-      {/* Mobile Menu */}
-      {mobileOpen && (
-        <div className="fixed inset-0 bg-black/40 z-50 md:hidden backdrop-blur-sm">
-          <div className="max-w-sm h-full p-6 flex flex-col relative border-r border-gray-100 bg-white">
-
-            {/* Close Button */}
-            <button
-              onClick={() => setMobileOpen(false)}
-              className="absolute top-4 right-4 text-2xl text-zinc-900"
-            >
-              ✕
-            </button>
-
+        {/* Main Navigation Bar */}
+        <div 
+          className={`transition-all duration-500 ${
+            scrolled 
+              ? "bg-white/95 backdrop-blur-md shadow-[0_10px_30px_rgba(0,0,0,0.08)] py-3" 
+              : "bg-white py-5 border-b border-gray-50"
+          }`}
+        >
+          <div className="container-custom flex items-center justify-between">
             {/* Logo */}
-            <div className="flex items-center justify-center gap-3 mb-10 mt-4">
-              <div className="flex flex-col leading-none text-left">
-                <span className="text-3xl font-black text-navy font-poppins tracking-tighter uppercase">
-                  TMM Logistics
-                </span>
-                <span className="text-[11px] font-bold text-primary uppercase tracking-widest -mt-0.5">
-                  Moving & Trucking Services
-                </span>
-              </div>
-            </div>
+            <Link href="/" className="group flex items-center gap-3 no-underline">
+               <div className="flex flex-col">
+                 <span className={`font-black tracking-tighter uppercase leading-none transition-all duration-500 ${
+                   scrolled ? "text-xl text-navy" : "text-2xl text-navy"
+                 }`}>
+                   TMM <span className="text-primary">Moving</span>
+                 </span>
+                 <span className={`font-extrabold uppercase tracking-[0.3em] mt-1 transition-all duration-500 ${
+                   scrolled ? "text-[8px] text-navy/30" : "text-[10px] text-navy/40"
+                 }`}>
+                   Relocation & Storage
+                 </span>
+               </div>
+            </Link>
 
-            {/* Nav */}
-            <nav className="flex flex-col gap-4">
+            {/* Desktop Nav */}
+            <nav className="hidden lg:flex items-center gap-1 xl:gap-2">
               {navItems.map((item) => (
                 <Link
                   key={item.label}
                   href={item.href}
-                  onClick={() => setMobileOpen(false)}
-                  className={`p-4 rounded-xl font-bold text-lg transition ${isActive(item.href)
-                    ? "bg-primary/10 text-primary shadow-sm"
-                    : "text-[#000814] hover:bg-gray-50"
-                    }`}
+                  className={`px-4 py-2 rounded-lg text-[0.9rem] font-bold no-underline transition-all duration-300 relative ${
+                    isActive(item.href) ? "text-primary bg-primary/5" : "text-navy hover:text-primary hover:bg-gray-50"
+                  }`}
                 >
                   {item.label}
                 </Link>
               ))}
             </nav>
 
-            {/* Bottom CTA */}
-            <div className="mt-auto flex flex-col gap-3 pt-6">
-              <button
-                onClick={handleGetQuote}
-                className="w-full bg-primary hover:bg-primary-dark text-white py-4 rounded-full text-lg font-medium transition-colors"
+            {/* Actions */}
+            <div className="hidden lg:flex items-center gap-4">
+              <a 
+                href="tel:+130609940409" 
+                className={`flex items-center gap-2 text-navy no-underline font-bold transition-all duration-500 ${
+                  scrolled ? "text-xs" : "text-sm"
+                }`}
               >
-                Book A Service
-              </button>
-              <a
-                href="tel:+130609940409"
-                className="w-full border border-gray-200 py-4 rounded-full text-center text-lg font-bold text-[#001219]"
-              >
-                📞 Call Now
+                <div className={`rounded-full bg-primary/10 flex items-center justify-center text-primary transition-all duration-500 ${
+                  scrolled ? "w-7 h-7" : "w-9 h-9"
+                }`}>
+                  <Phone size={scrolled ? 14 : 18} weight="fill" />
+                </div>
+                +1-306-0994-0409
               </a>
+              <button
+                onClick={() => router.push("/get-quote")}
+                className={`bg-navy text-white rounded-full font-bold transition-all duration-300 shadow-lg shadow-navy/10 hover:bg-primary hover:text-navy hover:shadow-primary/20 ${
+                  scrolled ? "px-6 py-2.5 text-xs" : "px-8 py-3.5 text-sm"
+                }`}
+              >
+                Get Quote
+              </button>
             </div>
+
+            {/* Mobile Toggle */}
+            <button
+              onClick={() => setMobileOpen(true)}
+              className="lg:hidden w-10 h-10 flex items-center justify-center rounded-lg bg-gray-50 text-navy hover:bg-primary/10 hover:text-primary transition-all"
+            >
+              <List size={24} weight="bold" />
+            </button>
           </div>
         </div>
-      )}
+      </header>
+
+      {/* Mobile Drawer */}
+      <div className={`fixed inset-0 z-[110] transition-all duration-500 lg:hidden ${mobileOpen ? "visible" : "invisible"}`}>
+        <div 
+          className={`absolute inset-0 bg-navy/60 backdrop-blur-sm transition-opacity duration-500 ${mobileOpen ? "opacity-100" : "opacity-0"}`}
+          onClick={() => setMobileOpen(false)}
+        />
+        <div className={`absolute top-0 right-0 bottom-0 w-[85%] max-w-sm bg-white shadow-2xl transition-transform duration-500 ease-out flex flex-col ${mobileOpen ? "translate-x-0" : "translate-x-full"}`}>
+          <div className="p-6 flex items-center justify-between border-b border-gray-50">
+            <span className="text-xl font-black text-navy tracking-tighter uppercase leading-none">
+              TMM <span className="text-primary">Moving</span>
+            </span>
+            <button onClick={() => setMobileOpen(false)} className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 text-navy"><X size={20} weight="bold" /></button>
+          </div>
+
+          <div className="flex-1 overflow-y-auto p-6">
+            <nav className="flex flex-col gap-2">
+              {navItems.map((item) => (
+                <Link
+                  key={item.label}
+                  href={item.href}
+                  className={`p-4 rounded-2xl font-bold text-lg transition-all ${
+                    isActive(item.href) ? "bg-primary/10 text-primary" : "text-navy hover:bg-gray-50"
+                  }`}
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </nav>
+          </div>
+
+          <div className="p-6 border-t border-gray-50 bg-gray-50/50 flex flex-col gap-4">
+            <a href="tel:+130609940409" className="flex items-center justify-center gap-3 p-4 bg-white border border-gray-100 rounded-2xl font-bold text-navy no-underline shadow-sm">
+              <Phone size={20} weight="fill" className="text-primary" />
+              Call Specialist
+            </a>
+            <button onClick={() => router.push("/get-quote")} className="w-full bg-navy text-white p-5 rounded-2xl font-bold text-lg shadow-xl shadow-navy/20">Get Free Quote</button>
+          </div>
+        </div>
+      </div>
+
+      {/* Dynamic Spacer */}
+      <div className="h-[90px] lg:h-[130px] transition-all duration-500" />
     </>
   );
 };

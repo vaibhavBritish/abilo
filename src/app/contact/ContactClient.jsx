@@ -14,6 +14,7 @@ import {
 } from "@phosphor-icons/react";
 import axios from "axios";
 import { toast } from "sonner";
+import { GHLWidget } from "@/components/GHLWidget";
 
 /* ---------------- HERO ---------------- */
 const PageHero = () => (
@@ -26,7 +27,7 @@ const PageHero = () => (
       </div>
 
       <h1 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 800, fontSize: "clamp(2.2rem, 6vw, 3.5rem)", color: "#FFFFFF", margin: "0 0 1.25rem", lineHeight: 1.1 }}>
-        Contact TMM Logistics Inc in Saskatchewan
+        Contact TMM Moving & Storage in Saskatchewan
       </h1>
 
       <p style={{ color: "#E5E7EB", fontSize: "1.1rem", maxWidth: 600, lineHeight: 1.7, margin: 0 }}>
@@ -158,6 +159,14 @@ export default function ContactClient() {
       </section>
 
       <OfficeMap />
+      <section style={{ background: "#fff", padding: "6rem 0" }}>
+        <div className="container-custom">
+          <GHLWidget 
+            title="Book a Strategy Session" 
+            subtitle="Connect with our Google-verified moving team for relocation solutions."
+          />
+        </div>
+      </section>
     </main>
   );
 }

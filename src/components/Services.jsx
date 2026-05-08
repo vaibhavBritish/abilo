@@ -2,6 +2,7 @@
 
 import { House, Truck, Buildings, Package, Warehouse, PianoKeys, Globe, Check, ArrowRight } from "@phosphor-icons/react";
 import { useScrollReveal } from "../hooks/useScrollReveal";
+import Link from "next/link";
 
 export const Services = () => {
   const sectionRef = useScrollReveal();
@@ -14,14 +15,16 @@ export const Services = () => {
       features: ["House & Apartment", "Local expertise", "Furniture assembly"],
       color: "icon-green",
       delay: "delay-100",
+      href: "/moving-services",
     },
     {
       icon: Truck,
-      title: "Regional Trucking",
-      description: "Dedicated trucking services across Western Canada. Reliable and on-time transportation for your regional needs.",
-      features: ["Saskatchewan routes", "Winnipeg connections", "Scheduled freight"],
+      title: "Long Distance Moving",
+      description: "Dedicated relocation services across Western Canada. Safe and on-time transportation for your provincial move.",
+      features: ["Alberta routes", "Winnipeg connections", "Scheduled delivery"],
       color: "icon-yellow",
       delay: "delay-200",
+      href: "/moving-services",
     },
     {
       icon: Buildings,
@@ -30,30 +33,34 @@ export const Services = () => {
       features: ["Office equipment", "After-hours moving", "Asset management"],
       color: "icon-green",
       delay: "delay-300",
+      href: "/moving-services",
     },
     {
       icon: Package,
-      title: "LTL Transportation",
-      description: "Efficient Less-Than-Truckload services for warehouses and businesses needing regional transportation.",
-      features: ["Cost-effective", "Regular schedules", "Small load specialists"],
+      title: "Packing & Supplies",
+      description: "Professional packing services and high-quality moving supplies to protect your valuables during transit.",
+      features: ["Custom crating", "Fragile care", "Moving boxes"],
       color: "icon-purple",
       delay: "delay-100",
+      href: "/moving-services#packing",
     },
     {
       icon: Warehouse,
-      title: "Warehousing & Storage",
-      description: "Secure warehousing solutions for regional distribution and long-term storage needs.",
-      features: ["Secure facility", "Flexible storage", "Inventory support"],
+      title: "Secure Storage",
+      description: "Climate-controlled storage solutions for short-term and long-term needs during your relocation.",
+      features: ["24/7 Security", "Climate control", "Inventory tracking"],
       color: "icon-blue",
       delay: "delay-200",
+      href: "/moving-services#storage",
     },
     {
       icon: Globe,
-      title: "Specialized Logistics",
-      description: "Custom logistics solutions tailored to organizations and high-volume transportation needs.",
-      features: ["Project logistics", "Dedicated support", "Western Canada reach"],
+      title: "Senior Relocations",
+      description: "Compassionate and professional moving services tailored to the unique needs of seniors and their families.",
+      features: ["Downsizing help", "Careful handling", "Patient team"],
       color: "icon-yellow",
       delay: "delay-300",
+      href: "/moving-services",
     },
   ];
 
@@ -72,12 +79,12 @@ export const Services = () => {
             Our Services
           </div>
           <h2 className="section-title">
-            Professional Moving & Trucking Solutions
+            Professional Moving & Storage Solutions
           </h2>
           <div className="divider" style={{ margin: "0.75rem auto 1rem" }} />
           <p className="section-subtitle" style={{ margin: "0 auto" }}>
-            From residential relocation to regional trucking and LTL freight, TMM Logistics Inc 
-            provides expert transportation services across Saskatchewan and Winnipeg.
+            From local house moves to long-distance relocation and secure storage, TMM Moving 
+            provides expert relocation services across Saskatchewan and Winnipeg.
           </p>
         </div>
 
@@ -120,7 +127,8 @@ export const Services = () => {
                 ))}
               </div>
 
-              <div
+              <Link
+                href={svc.href}
                 style={{
                   display: "flex",
                   alignItems: "center",
@@ -130,10 +138,11 @@ export const Services = () => {
                   color: "var(--primary)",
                   cursor: "pointer",
                   marginTop: "auto",
+                  textDecoration: "none"
                 }}
               >
                 Learn more <ArrowRight size={14} className="animate-bounce-x" />
-              </div>
+              </Link>
             </div>
           ))}
         </div>

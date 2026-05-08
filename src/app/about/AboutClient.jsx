@@ -24,15 +24,12 @@ const Story = () => (
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
         <div>
           <div className="text-sm text-primary mb-2">📖 Our Story</div>
-          <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-4">Saskatchewan's Trusted Logistics Partner</h2>
+          <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-4">Saskatchewan's Trusted Moving Partner</h2>
           <p className="text-gray-600 text-sm md:text-base leading-relaxed mb-4">
-            TMM Logistics Inc was founded with a single goal: to provide high-quality, reliable, and efficient moving and trucking solutions to families and organizations across Western Canada.
-          </p>
-          <p className="text-gray-600 text-sm md:text-base leading-relaxed mb-4">
-            Based in Saskatchewan and serving Winnipeg, we have built a reputation for excellence in regional transportation and LTL freight.
+            Based in Saskatchewan and serving Winnipeg, we have built a reputation for excellence in white-glove relocation and specialized household transportation.
           </p>
           <p className="text-gray-600 text-sm md:text-base leading-relaxed mb-6">
-            We handle everything from local residential moves to complex logistics for warehouses and industrial clients with precision and care.
+            We handle everything from local studio moves to complex corporate relocations with precision and care.
           </p>
           <div className="flex flex-wrap gap-2">
             {["Licensed & Insured", "BBB Accredited", "Certified Packers", "5-Star Rated"].map((b) => (
@@ -43,8 +40,8 @@ const Story = () => (
         <div className="grid grid-cols-2 sm:grid-cols-2 gap-4">
           {[
             { value: "10+", label: "Years Experience", icon: <Truck size={32} weight="fill" />, bg: "bg-gray-50", color: "text-primary" },
-            { value: "LTL", label: "Specialists", icon: <Package size={32} weight="fill" />, bg: "bg-gray-50", color: "text-yellow-600" },
-            { value: "Reg", label: "Transportation", icon: <Warehouse size={32} weight="fill" />, bg: "bg-gray-50", color: "text-green-600" },
+            { value: "100%", label: "Safe Handling", icon: <Package size={32} weight="fill" />, bg: "bg-gray-50", color: "text-yellow-600" },
+            { value: "Local", label: "Moving Experts", icon: <Warehouse size={32} weight="fill" />, bg: "bg-gray-50", color: "text-green-600" },
             { value: "24/7", label: "Client Support", icon: <Headset size={32} weight="fill" />, bg: "bg-gray-50", color: "text-purple-600" },
           ].map((s, idx) => (
             <div key={idx} className={`${s.bg} border border-gray-100 rounded-xl p-4 md:p-6 text-center flex flex-col items-center`}>
@@ -64,13 +61,13 @@ const Values = () => (
     <div className="container-custom">
       <div className="reveal" style={{ textAlign: "center", marginBottom: "3rem" }}>
         <div className="section-badge" style={{ background: "rgba(234, 179, 8, 0.1)", color: "var(--secondary)", border: "1px solid rgba(234, 179, 8, 0.2)", justifyContent: "center" }}>💡 Our Values</div>
-        <h2 className="section-title" style={{ color: "#fff" }}>Reliable Logistics, Every Time</h2>
+        <h2 className="section-title" style={{ color: "#fff" }}>Reliable Moving, Every Time</h2>
         <div className="divider" style={{ background: "var(--secondary)", margin: "0.75rem auto 0" }} />
       </div>
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "1.5rem" }}>
         {[
-          { icon: ShieldCheck, title: "Honest Pricing", desc: "We provide detailed, binding estimates with no hidden fees. Transparency is at the core of our logistics model.", color: "icon-yellow" },
-          { icon: Medal, title: "Expert Handling", desc: "From fragile household items to LTL freight, we ensure only the best for your cargo.", color: "icon-yellow" },
+          { icon: ShieldCheck, title: "Honest Pricing", desc: "We provide detailed, binding estimates with no hidden fees. Transparency is at the core of our moving model.", color: "icon-yellow" },
+          { icon: Medal, title: "Expert Handling", desc: "From fragile household items to high-value antiques, we ensure only the best for your belongings.", color: "icon-yellow" },
           { icon: UsersThree, title: "Client First", desc: "Our team is dedicated to ensuring you're never alone during your relocation or shipping process.", color: "icon-yellow" },
           { icon: Globe, title: "Regional Network", desc: "Based in Saskatoon, our reach extends across Saskatchewan and Winnipeg, ensuring a smooth delivery.", color: "icon-yellow" },
         ].map((v, i) => (
@@ -95,12 +92,12 @@ const Timeline = () => (
       </div>
       <div style={{ maxWidth: 700, margin: "0 auto", display: "flex", flexDirection: "column", gap: 0 }}>
         {[
-          { year: "2014", title: "Inception", desc: "TMM Logistics started operations with a focus on local residential relocations in Saskatchewan." },
-          { year: "2017", title: "Trucking Division", desc: "Launched dedicated trucking services for regional freight and industrial clients." },
+          { year: "2014", title: "Inception", desc: "TMM Moving started operations with a focus on local residential relocations in Saskatchewan." },
+          { year: "2017", title: "Full-Service Expansion", desc: "Launched comprehensive packing and climate-controlled storage solutions." },
           { year: "2019", title: "Winnipeg Expansion", desc: "Expanded our reach to serve the Winnipeg area with weekly schedules." },
-          { year: "2021", title: "LTL Services", desc: "Introduced Less-Than-Truckload services for warehouses and small businesses." },
+          { year: "2021", title: "Freight Services", desc: "Introduced Less-Than-Truckload services for warehouses and small businesses." },
           { year: "2023", title: "Fleet Modernization", desc: "Upgraded our fleet with advanced GPS tracking and eco-friendly transport options." },
-          { year: "2024", title: "A Trusted Name", desc: "Proudly recognized as a leading logistics partner for families and warehouses alike." },
+          { year: "2024", title: "A Trusted Name", desc: "Proudly recognized as a leading moving partner for families and warehouses alike." },
         ].map((m, i) => (
           <div key={m.year} className={`reveal delay-${(i % 3 + 1) * 100}`} style={{ display: "flex", gap: "1.5rem", paddingBottom: "2rem", position: "relative" }}>
             <div style={{ display: "flex", flexDirection: "column", alignItems: "center", flexShrink: 0 }}>
@@ -128,7 +125,7 @@ const Team = () => (
       </div>
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))", gap: "1.5rem" }}>
         {[
-          { name: "Management Team", role: "TMM Logistics Leaders", exp: "15+ years", color: "var(--secondary)", init: "TMM" },
+          { name: "Management Team", role: "TMM Moving Leaders", exp: "15+ years", color: "var(--secondary)", init: "TMM" },
           { name: "Logistics Team", role: "Freight Specialists", exp: "10+ years", color: "var(--secondary)", init: "LT" },
           { name: "Support Team", role: "Client Success", exp: "8+ years", color: "var(--secondary)", init: "ST" },
           { name: "Field Team", role: "Professional Movers", exp: "12+ years", color: "var(--secondary)", init: "FT" },
@@ -150,8 +147,8 @@ export default function AboutClient() {
   return (
     <main>
       <PageHero
-        title="About TMM Logistics Inc"
-        subtitle="Saskatchewan's premier partner for residential moving, regional trucking, and LTL freight. Discover our commitment to Western Canada."
+        title="About TMM Moving & Storage"
+        subtitle="Saskatchewan's premier partner for residential moving, long-distance relocation, and secure storage. Discover our commitment to Western Canada."
         breadcrumb="About"
       />
       <Story />
@@ -164,7 +161,7 @@ export default function AboutClient() {
             <h2 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 800, fontSize: "clamp(1.5rem, 3vw, 2rem)", color: "#000000", margin: "0 0 1rem" }}>
               Join Thousands of Happy Clients
             </h2>
-            <p style={{ color: "rgba(0,0,0,0.7)", marginBottom: "2rem", fontWeight: 500 }}>Experience the TMM Logistics difference — where your transport is our priority.</p>
+            <p style={{ color: "rgba(0,0,0,0.7)", marginBottom: "2rem", fontWeight: 500 }}>Experience the TMM Moving difference — where your transport is our priority.</p>
             <button onClick={() => router.push("/get-quote")} className="btn-secondary" style={{ background: "#000814", color: "#fff", display: "inline-flex", alignItems: "center", gap: 8, border: "none", padding: "12px 24px", borderRadius: "4px", fontWeight: 600 }}>
               Get Your Free Quote <ArrowRight size={16} />
             </button>

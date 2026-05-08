@@ -10,11 +10,11 @@ const API = "/api";
 
 const SERVICES = [
   "Residential Moving",
-  "Trucking Services",
-  "LTL Transportation",
+  "Long Distance Moving",
   "Commercial Moving",
-  "Warehousing & Storage",
-  "Regional Freight",
+  "Packing & Supplies",
+  "Storage Solutions",
+  "Senior Relocations",
   "Other",
 ];
 
@@ -99,11 +99,11 @@ export const LeadForm = () => {
                 }}
               >
                 Get a Free Quote &amp;<br />
-                <span style={{ color: "var(--primary)" }}>Expert Logistics Advice</span> Today
+                <span style={{ color: "var(--primary)" }}>Expert Relocation Advice</span> Today
               </h2>
 
             <p style={{ color: "#374151", fontSize: "1rem", lineHeight: 1.75, marginBottom: "2rem", maxWidth: 420 }}>
-              Tell us about your logistics needs and our team will call you
+              Tell us about your moving needs and our team will call you
               back within 30 minutes with a free estimate — absolutely free.
             </p>
 
