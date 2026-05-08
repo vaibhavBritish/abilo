@@ -9,7 +9,8 @@ import {
 export const Footer = () => {
   const quickLinks = [
     { label: "Home",          to: "/" },
-    { label: "Services",      to: "/services" },
+    { label: "Moving Services", to: "/moving-services" },
+    { label: "Storage & Supplies", to: "/moving-services#storage" },
     { label: "About Us",      to: "/about" },
     { label: "Gallery",       to: "/gallery" },
     { label: "Testimonials",  to: "/testimonials" },
@@ -18,8 +19,12 @@ export const Footer = () => {
   ];
 
   const services = [
-    "Residential Moving", "Trucking Services", "LTL Transportation",
-    "Commercial Moving", "Warehousing Support", "Regional Freight",
+    { label: "Residential Moving", to: "/moving-services" },
+    { label: "Commercial Moving", to: "/moving-services" },
+    { label: "Professional Packing", to: "/moving-services#packing" },
+    { label: "Storage Solutions", to: "/moving-services#storage" },
+    { label: "Long Distance Moving", to: "/moving-services" },
+    { label: "Senior Relocations", to: "/moving-services" },
   ];
 
   const socials = [
@@ -43,16 +48,16 @@ export const Footer = () => {
             <div className="flex items-center gap-3 mb-6 w-fit">
               <div className="flex flex-col leading-none">
                 <span className="text-2xl md:text-3xl font-black text-white font-poppins tracking-tighter uppercase whitespace-nowrap">
-                  TMM Logistics
+                  TMM Moving
                 </span>
                 <span className="text-[9px] md:text-[11px] font-bold text-primary uppercase tracking-widest -mt-0.5 whitespace-nowrap">
-                  Moving & Trucking Services
+                  Premium Relocation Services
                 </span>
               </div>
             </div>
             <p style={{ fontSize: "0.85rem", lineHeight: 1.7, color: "var(--text-muted)", marginBottom: "1.25rem" }}>
-              Providing professional moving and trucking solutions across Saskatchewan and Winnipeg. 
-              Your reliable partner for regional logistics and relocation.
+              Providing professional residential and commercial moving solutions across Saskatchewan and Winnipeg. 
+              Your reliable partner for stress-free relocation and storage.
             </p>
             <div style={{ display: "flex", gap: "0.5rem" }}>
               {socials.map(({ Icon, href, label }) => (
@@ -77,8 +82,8 @@ export const Footer = () => {
           <div>
             <div className="footer-heading">Our Services</div>
             {services.map((s) => (
-              <Link key={s} href="/services" className="footer-link">
-                <span style={{ marginRight: 6, color: "var(--secondary)" }}>›</span>{s}
+              <Link key={s.label} href={s.to} className="footer-link">
+                <span style={{ marginRight: 6, color: "var(--secondary)" }}>›</span>{s.label}
               </Link>
             ))}
           </div>
@@ -118,7 +123,7 @@ export const Footer = () => {
       <div style={{ padding: "1.25rem 0" }}>
         <div className="container-custom" style={{ display: "flex", flexWrap: "wrap", alignItems: "center", justifyContent: "space-between", gap: "0.75rem" }}>
           <p style={{ fontSize: "0.8rem", color: "var(--text-muted)", margin: 0 }}>
-            © 2026 TMM Logistics Inc. All rights reserved.
+            © 2026 TMM Moving & Storage. All rights reserved.
           </p>
           <div style={{ display: "flex", gap: "1.5rem" }}>
             {["Privacy Policy", "Terms & Conditions", "Sitemap"].map((l) => (

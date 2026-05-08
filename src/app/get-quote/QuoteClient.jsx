@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { QuoteForm } from "@/components/QuoteForm";
 import { CheckCircle, Phone, ShieldCheck } from "@phosphor-icons/react";
+import { GHLWidget } from "@/components/GHLWidget";
 
 const PageHero = () => (
   <section style={{ background: "var(--navy)", padding: "5rem 0 4rem", borderBottom: "1px solid rgba(255,255,255,0.05)" }}>
@@ -113,6 +114,14 @@ export default function QuoteClient() {
               <SideInfo />
             </div>
           </div>
+        </div>
+      </section>
+      <section style={{ background: "#F9FAFB", padding: "6rem 0", borderTop: "1px solid #F3F4F6" }}>
+        <div className="container-custom">
+          <GHLWidget 
+            title="Prefer a Direct Consultation?" 
+            subtitle="Schedule a 15-minute call with our logistics coordinator via Google Calendar."
+          />
         </div>
       </section>
     </main>

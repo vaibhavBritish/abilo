@@ -231,10 +231,10 @@ export const QuoteForm = () => {
                   </SelectTrigger>
                   <SelectContent>
                     <SelectItem value="residential">Residential Move</SelectItem>
-                    <SelectItem value="trucking">Trucking Services</SelectItem>
-                    <SelectItem value="ltl">LTL Transportation</SelectItem>
+                    <SelectItem value="long-distance">Long Distance Move</SelectItem>
+                    <SelectItem value="packing">Packing & Supplies</SelectItem>
                     <SelectItem value="commercial">Commercial/Office Move</SelectItem>
-                    <SelectItem value="warehousing">Warehousing & Storage</SelectItem>
+                    <SelectItem value="storage">Secure Storage</SelectItem>
                     <SelectItem value="other">Other</SelectItem>
                   </SelectContent>
                 </Select>

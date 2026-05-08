@@ -1,27 +1,26 @@
 import "./globals.css";
 import { Toaster } from "@/components/ui/sonner";
-import { TopBar } from "@/components/TopBar";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { LeadForm } from "@/components/LeadForm";
 
 export const metadata = {
-  title: "TMM Logistics Inc - Premier Moving & Trucking Services",
-  description: "TMM Logistics Inc provides professional moving, trucking, and LTL services across Saskatchewan and Winnipeg. Your trusted partner for residential and commercial relocation.",
+  title: "TMM Moving & Storage - Premier Residential & Commercial Movers",
+  description: "TMM Moving provides professional residential and commercial moving services across Saskatchewan and Winnipeg. Your trusted partner for stress-free relocation.",
   alternates: {
     canonical: "https://tmmgroup.ca/",
   },
   openGraph: {
-    title: "TMM Logistics Inc - Premier Moving & Trucking Services",
-    description: "TMM Logistics Inc provides professional moving, trucking, and LTL services across Saskatchewan and Winnipeg. Your trusted partner for residential and commercial relocation.",
+    title: "TMM Moving & Storage - Premier Residential & Commercial Movers",
+    description: "TMM Moving provides professional residential and commercial moving services across Saskatchewan and Winnipeg. Your trusted partner for stress-free relocation.",
     url: "https://tmmgroup.ca/",
-    siteName: "TMM Logistics Inc",
+    siteName: "TMM Moving",
     images: [
       {
         url: "https://tmmgroup.ca/hero-truck.png",
         width: 1200,
         height: 630,
-        alt: "TMM Logistics Inc - Moving and Trucking Services",
+        alt: "TMM Moving - Professional Moving Services",
       },
     ],
     locale: "en_CA",
@@ -32,7 +31,7 @@ export const metadata = {
     shortcut: "/favicon-main.png",
     apple: "/favicon-main.png",
   },
-  keywords: "moving services Saskatchewan, trucking Winnipeg, LTL transportation, TMM Logistics, commercial moving Saskatchewan, residential movers Winnipeg, freight services Canada",
+  keywords: "moving services Saskatchewan, house moving Winnipeg, residential movers, commercial relocation, TMM Moving, Saskatoon movers, Winnipeg moving company",
 };
 
 export const viewport = {
@@ -72,7 +71,7 @@ export default function RootLayout({ children }) {
             {
               "@context": "https://schema.org",
               "@type": ["LocalBusiness", "MovingCompany"],
-              "name": "TMM Logistics Inc",
+              "name": "TMM Moving",
               "url": "https://tmmgroup.ca",
               "telephone": "+1-306-0994-0409",
               "address": {
@@ -98,7 +97,6 @@ export default function RootLayout({ children }) {
         <div className="App" data-testid="app-container">
           <ScrollReveal />
           <NavigationWrapper>
-            <TopBar />
             <Header />
           </NavigationWrapper>
           <main>{children}</main>
@@ -116,7 +114,7 @@ export default function RootLayout({ children }) {
 
 const WhatsAppButton = () => (
   <a
-    href="https://wa.me/130609940409?text=Hello%20TMM%20Logistics%2C%20I%20would%20like%20to%20get%20a%20logistics%20quote."
+    href="https://wa.me/130609940409?text=Hello%20TMM%20Moving%2C%20I%20would%20like%20to%20get%20a%20moving%20quote."
     target="_blank"
     rel="noopener noreferrer"
     className="whatsapp-float"

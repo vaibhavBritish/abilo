@@ -25,11 +25,11 @@ const QuickStats = () => (
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(160px, 1fr))", gap: "1rem", textAlign: "center" }}>
         {[
           { value: "10+", label: "Years Experience", icon: <Truck size={24} weight="fill" /> },
-          { value: "LTL", label: "Specialists", icon: <Users size={24} weight="fill" /> },
+          { value: "5K+", label: "Moves Completed", icon: <Users size={24} weight="fill" /> },
           { value: "50+", label: "Service Cities", icon: <Globe size={24} weight="fill" /> },
           { value: "24/7", label: "Support Available", icon: <Headset size={24} weight="fill" /> },
-          { value: "Reg", label: "Transportation", icon: <Warehouse size={24} weight="fill" /> },
-          { value: "100%", label: "Safe Delivery", icon: <ShieldCheck size={24} weight="fill" /> },
+          { value: "Safe", label: "Packing Systems", icon: <Warehouse size={24} weight="fill" /> },
+          { value: "100%", label: "Secure Storage", icon: <ShieldCheck size={24} weight="fill" /> },
         ].map(({ value, label, icon }) => (
           <div key={label} className="reveal" style={{ padding: "0.75rem" }}>
             <div style={{ fontSize: "1.5rem", marginBottom: 4, color: "var(--secondary)", display: "flex", justifyContent: "center" }}>{icon}</div>
@@ -55,7 +55,7 @@ const CTABanner = () => {
             Ready to Move? Let's Get Started!
           </h2>
           <p style={{ color: "rgba(0,0,0,0.7)", fontSize: "1rem", marginBottom: "2rem", maxWidth: 560, margin: "0 auto 2rem", fontWeight: 500 }}>
-            Get a professional logistics estimate in minutes. Our team is standing by to handle every detail.
+            Get a professional moving estimate in minutes. Our team is standing by to handle every detail of your relocation.
           </p>
           <div style={{ display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap" }}>
             <button
@@ -99,12 +99,12 @@ const FeaturedTestimonials = () => (
       >
         <CarouselContent className="-ml-4">
           {[
-            { name: "Sarah Jenkins", loc: "Saskatoon → Winnipeg", text: "Amazing experience with TMM Logistics! They handled our residential move flawlessly. From packing to unloading, everything was perfect.", rating: 5, color: "rgba(234, 179, 8, 0.1)" },
-            { name: "Industrial Client", loc: "Regina Regional", text: "Best logistics partner in the prairies. Very professional and always available for support.", rating: 5, color: "rgba(234, 179, 8, 0.1)" },
-            { name: "Emily Rodriguez", loc: "Warehouse Distribution", text: "Our LTL freight was very well organized. The logistics and transport were top-notch.", rating: 5, color: "rgba(234, 179, 8, 0.1)" },
+            { name: "Sarah Jenkins", loc: "Saskatoon → Winnipeg", text: "Amazing experience with TMM Moving! They handled our residential move flawlessly. From packing to unloading, everything was perfect.", rating: 5, color: "rgba(234, 179, 8, 0.1)" },
+            { name: "Business Owner", loc: "Regina Regional", text: "Best moving partner in the prairies. Very professional and always available for support.", rating: 5, color: "rgba(234, 179, 8, 0.1)" },
+            { name: "Emily Rodriguez", loc: "Local Apartment Move", text: "Our household move was very well organized. The packing and transport were top-notch.", rating: 5, color: "rgba(234, 179, 8, 0.1)" },
             { name: "David Wilson", loc: "Saskatoon Local", text: "Reliable and fast moving service. We got the best rates for full-service packing and moving through TMM.", rating: 5, color: "rgba(234, 179, 8, 0.1)" },
-            { name: "Jessica Lee", loc: "Trucking Client", text: "Got my items transported without any hassle. Their fleet is very modern. Excellent service!", rating: 5, color: "rgba(234, 179, 8, 0.1)" },
-            { name: "Robert Chen", loc: "Winnipeg Local Move", text: "Stress-free planning for our home relocation. TMM Logistics made it so special. Thank you!", rating: 5, color: "rgba(234, 179, 8, 0.1)" },
+            { name: "Jessica Lee", loc: "Furniture Delivery", text: "Got my items moved without any hassle. Their team is very careful. Excellent service!", rating: 5, color: "rgba(234, 179, 8, 0.1)" },
+            { name: "Robert Chen", loc: "Winnipeg Local Move", text: "Stress-free planning for our home relocation. TMM Moving made it so special. Thank you!", rating: 5, color: "rgba(234, 179, 8, 0.1)" },
           ].map((t, i) => (
             <CarouselItem key={i} className="pl-4 md:basis-1/2 lg:basis-1/3">
               <div className="reveal h-full" style={{ background: "#111", borderRadius: 4, border: "1px solid #222", padding: "2rem 1.5rem", display: "flex", flexDirection: "column" }}>
