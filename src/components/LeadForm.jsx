@@ -12,6 +12,7 @@ const SERVICES = [
   "Residential Moving",
   "Long Distance Moving",
   "Commercial Moving",
+  "Trucking & Logistics",
   "Packing & Supplies",
   "Storage Solutions",
   "Senior Relocations",

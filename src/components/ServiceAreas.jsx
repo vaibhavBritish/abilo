@@ -56,15 +56,25 @@ export const ServiceAreas = () => {
             </div>
 
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 text-center md:text-left">
-              {areas.map((a) => (
-                <div
-                  key={a}
-                  className="bg-black/40 text-zinc-400 px-3 py-2 rounded-xl text-[11px] font-medium border border-zinc-800/50 hover:border-primary/40 hover:text-white hover:bg-black/60 transition-all duration-300 flex items-center gap-2 group"
-                >
-                  <span className="w-1.5 h-1.5 rounded-full bg-zinc-700 group-hover:bg-primary transition-colors flex-shrink-0" />
-                  <span className="truncate">{a}</span>
-                </div>
-              ))}
+              {areas.map((a) => {
+                const slugMap = {
+                  "Saskatoon": "/locations/sk/saskatoon-movers",
+                  "Regina": "/locations/sk/regina-movers",
+                  "Winnipeg": "/locations/mb/winnipeg-movers",
+                };
+                const href = slugMap[a] || "#";
+                
+                return (
+                  <a
+                    key={a}
+                    href={href}
+                    className="bg-black/40 text-zinc-400 px-3 py-2 rounded-xl text-[11px] font-medium border border-zinc-800/50 hover:border-primary/40 hover:text-white hover:bg-black/60 transition-all duration-300 flex items-center gap-2 group decoration-none"
+                  >
+                    <span className="w-1.5 h-1.5 rounded-full bg-zinc-700 group-hover:bg-primary transition-colors flex-shrink-0" />
+                    <span className="truncate">{a}</span>
+                  </a>
+                );
+              })}
             </div>
           </div>
 

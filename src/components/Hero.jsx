@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { Phone, ArrowRight, CheckCircle, Star } from "@phosphor-icons/react";
 
-export const Hero = () => {
+export const Hero = ({ location }) => {
   const [visible, setVisible] = useState(false);
   const router = useRouter();
 
@@ -13,7 +13,14 @@ export const Hero = () => {
     return () => clearTimeout(t);
   }, []);
 
-  const checks = ["Licensed & Insured", "Packing & Supplies", "Saskatchewan & Winnipeg"];
+  const cityName = location?.city || "Saskatchewan";
+  const provinceName = location?.provinceFull || "Winnipeg";
+  
+  const checks = [
+    "Licensed & Insured", 
+    "Packing & Supplies", 
+    location ? `Serving ${location.city}` : "Saskatchewan & Winnipeg"
+  ];
 
   return (
     <section
@@ -41,19 +48,19 @@ export const Hero = () => {
             {/* Top badge */}
             <div className="hero-badge" style={{ marginBottom: "1.25rem", fontSize: "0.78rem" }}>
               <Star size={14} weight="fill" />
-              &nbsp;#1 Moving Company in Saskatchewan · 10+ Years Experience
+              &nbsp;#1 Moving Company in {cityName} · 10+ Years Experience
             </div>
 
             {/* Heading */}
             <h1 className="hero-title" style={{ marginBottom: "1.1rem" }}>
-              Saskatchewan's #1<br />
+              {cityName}'s #1<br />
               <span className="gradient-text">Professional Movers</span><br />
             </h1>
 
             {/* Sub-text */}
             <p style={{ fontSize: "1.05rem", color: "#E5E7EB", lineHeight: 1.75, marginBottom: "1.5rem", maxWidth: 480 }}>
-              TMM Moving & Storage delivers stress-free home and office relocation. 
-              White-glove service for families, seniors, and businesses across Saskatchewan and Winnipeg.
+              TMM Moving & Storage delivers stress-free home and office relocation in {cityName}. 
+              White-glove service for families, seniors, and businesses across {location ? location.provinceFull : "Saskatchewan and Winnipeg"}.
             </p>
 
             {/* Check list */}
@@ -77,13 +84,13 @@ export const Hero = () => {
                 Get Free Quote <ArrowRight size={17} weight="bold" />
               </button>
               <a
-                href="tel:+130609940409"
+                href={`tel:${location?.phone || "+130609940409"}`}
                 className="btn-outline"
                 data-testid="hero-call-btn"
                 style={{ display: "inline-flex", alignItems: "center", gap: 7, color: "#fff", borderColor: "rgba(255,255,255,0.4)" }}
               >
                 <Phone size={17} weight="fill" />
-                Call 306-0994-0409
+                Call {location?.phone || "306-0994-0409"}
               </a>
             </div>
 
@@ -146,7 +153,7 @@ export const Hero = () => {
             >
               <img
                 src="/tmm-hero-moving.png"
-                alt="Professional TMM Moving team serving Saskatchewan and Winnipeg"
+                alt={`Professional TMM Moving team serving ${cityName}`}
                 style={{ width: "100%", height: "auto", display: "block" }}
                 data-testid="hero-image"
               />
@@ -216,7 +223,7 @@ export const Hero = () => {
               </div>
               <div style={{ fontSize: "0.9rem", fontWeight: 600, color: "#fff" }}>4.9/5</div>
               <div style={{ width: 1, height: 20, background: "#222" }} />
-              <div style={{ fontSize: "0.82rem", color: "#D1D5DB" }}>Top Rated Movers in Saskatchewan</div>
+              <div style={{ fontSize: "0.82rem", color: "#D1D5DB" }}>Top Rated Movers in {cityName}</div>
             </div>
           </div>
         </div>

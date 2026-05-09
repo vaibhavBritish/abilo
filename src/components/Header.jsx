@@ -24,6 +24,7 @@ export const Header = () => {
   const navItems = [
     { label: "Home", href: "/" },
     { label: "Moving Services", href: "/moving-services" },
+    { label: "Trucking", href: "/trucking-services" },
     { label: "About", href: "/about" },
     { label: "Testimonials", href: "/testimonials" },
     { label: "Gallery", href: "/gallery" },
@@ -70,15 +71,15 @@ export const Header = () => {
         >
           <div className="container-custom flex items-center justify-between">
             {/* Logo */}
-            <Link href="/" className="group flex items-center gap-3 no-underline">
+            <Link href="/" className="group flex items-center gap-2.5 no-underline">
                <div className="flex flex-col">
                  <span className={`font-black tracking-tighter uppercase leading-none transition-all duration-500 ${
-                   scrolled ? "text-xl text-navy" : "text-2xl text-navy"
+                   scrolled ? "text-lg text-navy" : "text-xl text-navy"
                  }`}>
                    TMM <span className="text-primary">Moving</span>
                  </span>
-                 <span className={`font-extrabold uppercase tracking-[0.3em] mt-1 transition-all duration-500 ${
-                   scrolled ? "text-[8px] text-navy/30" : "text-[10px] text-navy/40"
+                 <span className={`font-extrabold uppercase tracking-[0.25em] mt-0.5 transition-all duration-500 ${
+                   scrolled ? "text-[7px] text-navy/30" : "text-[9px] text-navy/40"
                  }`}>
                    Relocation & Storage
                  </span>
@@ -86,12 +87,12 @@ export const Header = () => {
             </Link>
 
             {/* Desktop Nav */}
-            <nav className="hidden lg:flex items-center gap-1 xl:gap-2">
+            <nav className="hidden lg:flex items-center gap-0.5 xl:gap-1">
               {navItems.map((item) => (
                 <Link
                   key={item.label}
                   href={item.href}
-                  className={`px-4 py-2 rounded-lg text-[0.9rem] font-bold no-underline transition-all duration-300 relative ${
+                  className={`px-2.5 py-1.5 rounded-lg text-[0.8rem] xl:text-[0.85rem] font-bold no-underline transition-all duration-300 relative whitespace-nowrap ${
                     isActive(item.href) ? "text-primary bg-primary/5" : "text-navy hover:text-primary hover:bg-gray-50"
                   }`}
                 >
@@ -101,24 +102,24 @@ export const Header = () => {
             </nav>
 
             {/* Actions */}
-            <div className="hidden lg:flex items-center gap-4">
+            <div className="hidden lg:flex items-center gap-3 xl:gap-4">
               <a 
                 href="tel:+130609940409" 
                 className={`flex items-center gap-2 text-navy no-underline font-bold transition-all duration-500 ${
-                  scrolled ? "text-xs" : "text-sm"
+                  scrolled ? "text-[0.7rem]" : "text-[0.8rem]"
                 }`}
               >
                 <div className={`rounded-full bg-primary/10 flex items-center justify-center text-primary transition-all duration-500 ${
-                  scrolled ? "w-7 h-7" : "w-9 h-9"
+                  scrolled ? "w-6 h-6" : "w-8 h-8"
                 }`}>
-                  <Phone size={scrolled ? 14 : 18} weight="fill" />
+                  <Phone size={scrolled ? 12 : 16} weight="fill" />
                 </div>
                 +1-306-0994-0409
               </a>
               <button
                 onClick={() => router.push("/get-quote")}
                 className={`bg-navy text-white rounded-full font-bold transition-all duration-300 shadow-lg shadow-navy/10 hover:bg-primary hover:text-navy hover:shadow-primary/20 ${
-                  scrolled ? "px-6 py-2.5 text-xs" : "px-8 py-3.5 text-sm"
+                  scrolled ? "px-5 py-2 text-[0.7rem]" : "px-7 py-3 text-[0.8rem]"
                 }`}
               >
                 Get Quote

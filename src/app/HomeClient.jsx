@@ -42,8 +42,10 @@ const QuickStats = () => (
   </div>
 );
 
-const CTABanner = () => {
+const CTABanner = ({ location }) => {
   const router = useRouter();
+  const cityName = location?.city || "Saskatchewan";
+  
   return (
     <section style={{ background: "var(--secondary)", padding: "4rem 0" }}>
       <div className="container-custom" style={{ textAlign: "center" }}>
@@ -52,10 +54,10 @@ const CTABanner = () => {
             🏠 RELOCATE WITH CONFIDENCE
           </div>
           <h2 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 800, fontSize: "clamp(1.6rem, 4vw, 2.5rem)", color: "#000", margin: "0 0 1rem" }}>
-            Ready to Move? Let's Get Started!
+            Ready to Move in {cityName}? Let's Get Started!
           </h2>
           <p style={{ color: "rgba(0,0,0,0.7)", fontSize: "1rem", marginBottom: "2rem", maxWidth: 560, margin: "0 auto 2rem", fontWeight: 500 }}>
-            Get a professional moving estimate in minutes. Our team is standing by to handle every detail of your relocation.
+            Get a professional moving estimate in minutes. Our {cityName} team is standing by to handle every detail of your relocation.
           </p>
           <div style={{ display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap" }}>
             <button
@@ -66,8 +68,8 @@ const CTABanner = () => {
             >
               Get Free Quote <ArrowRight size={18} weight="bold" />
             </button>
-            <a href="tel:+130609940409" style={{ background: "rgba(0,0,0,0.05)", color: "#000", border: "2px solid rgba(0,0,0,0.2)", borderRadius: 4, padding: "14px 32px", fontWeight: 700, fontSize: "1rem", textDecoration: "none", display: "flex", alignItems: "center", gap: 8 }}>
-              📞 +1-306-0994-0409
+            <a href={`tel:${location?.phone || "+130609940409"}`} style={{ background: "rgba(0,0,0,0.05)", color: "#000", border: "2px solid rgba(0,0,0,0.2)", borderRadius: 4, padding: "14px 32px", fontWeight: 700, fontSize: "1rem", textDecoration: "none", display: "flex", alignItems: "center", gap: 8 }}>
+              📞 {location?.phone || "+1-306-0994-0409"}
             </a>
           </div>
         </div>
@@ -134,18 +136,18 @@ const FeaturedTestimonials = () => (
   </section>
 );
 
-export default function HomeClient() {
+export default function HomeClient({ location }) {
   return (
     <main>
-      <Hero />
+      <Hero location={location} />
       <QuickStats />
-      <Services />
-      <WhyChooseUs />
-      <TrustSection />
-      <FeaturedTestimonials />
-      <ServiceAreas />
-      <CTABanner />
-      <MapSection />
+      <Services location={location} />
+      <WhyChooseUs location={location} />
+      <TrustSection location={location} />
+      <FeaturedTestimonials location={location} />
+      <ServiceAreas location={location} />
+      <CTABanner location={location} />
+      <MapSection location={location} />
     </main>
   );
 }
