@@ -9,12 +9,21 @@ export const Services = () => {
 
   const services = [
     {
+      icon: Truck,
+      title: "Trucking & Logistics",
+      description: "Reliable freight and logistics solutions across Canada. We handle regional and long-haul transportation with precision.",
+      features: ["Freight transport", "LTL & FTL", "Supply chain help"],
+      color: "icon-blue",
+      delay: "delay-100",
+      href: "/trucking-services",
+    },
+    {
       icon: House,
       title: "Residential Moving",
       description: "Fast and efficient residential moving services in Saskatchewan and Winnipeg. We handle your family's belongings with utmost care.",
       features: ["House & Apartment", "Local expertise", "Furniture assembly"],
       color: "icon-green",
-      delay: "delay-100",
+      delay: "delay-200",
       href: "/moving-services",
     },
     {
@@ -23,7 +32,7 @@ export const Services = () => {
       description: "Dedicated relocation services across Western Canada. Safe and on-time transportation for your provincial move.",
       features: ["Alberta routes", "Winnipeg connections", "Scheduled delivery"],
       color: "icon-yellow",
-      delay: "delay-200",
+      delay: "delay-300",
       href: "/moving-services",
     },
     {
@@ -32,7 +41,7 @@ export const Services = () => {
       description: "Professional business and office relocation services. We minimize downtime and ensure a smooth transition.",
       features: ["Office equipment", "After-hours moving", "Asset management"],
       color: "icon-green",
-      delay: "delay-300",
+      delay: "delay-100",
       href: "/moving-services",
     },
     {
@@ -41,7 +50,7 @@ export const Services = () => {
       description: "Professional packing services and high-quality moving supplies to protect your valuables during transit.",
       features: ["Custom crating", "Fragile care", "Moving boxes"],
       color: "icon-purple",
-      delay: "delay-100",
+      delay: "delay-200",
       href: "/moving-services#packing",
     },
     {
@@ -50,7 +59,7 @@ export const Services = () => {
       description: "Climate-controlled storage solutions for short-term and long-term needs during your relocation.",
       features: ["24/7 Security", "Climate control", "Inventory tracking"],
       color: "icon-blue",
-      delay: "delay-200",
+      delay: "delay-300",
       href: "/moving-services#storage",
     },
     {
@@ -59,7 +68,7 @@ export const Services = () => {
       description: "Compassionate and professional moving services tailored to the unique needs of seniors and their families.",
       features: ["Downsizing help", "Careful handling", "Patient team"],
       color: "icon-yellow",
-      delay: "delay-300",
+      delay: "delay-100",
       href: "/moving-services",
     },
   ];

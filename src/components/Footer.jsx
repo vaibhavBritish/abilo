@@ -19,6 +19,7 @@ export const Footer = () => {
   ];
 
   const services = [
+    { label: "Trucking & Logistics", to: "/trucking-services" },
     { label: "Residential Moving", to: "/moving-services" },
     { label: "Commercial Moving", to: "/moving-services" },
     { label: "Professional Packing", to: "/moving-services#packing" },
