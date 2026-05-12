@@ -13,7 +13,7 @@ const PageHero = () => (
       </div>
       <h1 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 800, fontSize: "clamp(2.2rem, 6vw, 3.5rem)", color: "#FFFFFF", margin: "0 0 1.25rem", lineHeight: 1.1 }}>Our Gallery</h1>
       <p style={{ color: "#E5E7EB", fontSize: "1.1rem", maxWidth: 600, lineHeight: 1.7, margin: 0 }}>
-        See our team in action — from careful packing to safe delivery across Saskatchewan and Winnipeg. Every transport tells a story.
+        See our team in action — from careful packing to safe delivery across Saskatoon and neighbouring province. Every transport tells a story.
       </p>
     </div>
   </section>
@@ -28,7 +28,7 @@ export default function GalleryClient() {
         <div className="container-custom">
           <div className="text-center mb-12 max-w-3xl mx-auto">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 font-poppins">
-             Our Work in Saskatchewan & Winnipeg
+              Our Work in Saskatoon & Winnipeg
             </h2>
             <div className="w-16 h-1 bg-primary mx-auto mb-6 rounded-full" />
             <p className="text-gray-600 leading-relaxed">
@@ -41,14 +41,14 @@ export default function GalleryClient() {
 
           {/* Marquee Iframe Section */}
           <div className="mb-20 -mx-4 md:mx-0 overflow-hidden">
-            <iframe 
-              src="/gallery-marquee" 
-              style={{ 
-                width: "100%", 
-                height: "480px", 
+            <iframe
+              src="/gallery-marquee"
+              style={{
+                width: "100%",
+                height: "480px",
                 border: "none",
                 background: "transparent",
-                overflow: "hidden" 
+                overflow: "hidden"
               }}
               scrolling="no"
               title="Work Progress Marquee"

@@ -14,7 +14,6 @@ import {
 } from "@phosphor-icons/react";
 import axios from "axios";
 import { toast } from "sonner";
-import { GHLWidget } from "@/components/GHLWidget";
 
 /* ---------------- HERO ---------------- */
 const PageHero = () => (
@@ -27,7 +26,7 @@ const PageHero = () => (
       </div>
 
       <h1 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 800, fontSize: "clamp(2.2rem, 6vw, 3.5rem)", color: "#FFFFFF", margin: "0 0 1.25rem", lineHeight: 1.1 }}>
-        Contact TMM Moving & Storage in Saskatchewan
+        Contact TMM Logistics INC in Saskatoon
       </h1>
 
       <p style={{ color: "#E5E7EB", fontSize: "1.1rem", maxWidth: 600, lineHeight: 1.7, margin: 0 }}>
@@ -42,7 +41,7 @@ const contacts = [
   { icon: Phone, label: "Call Us", value: "+1-306-0994-0409", sub: "Regional Support", href: "tel:+130609940409", color: "text-green-700" },
   { icon: WhatsappLogo, label: "WhatsApp", value: "+1-306-0994-0409", sub: "Quick response", href: "https://wa.me/130609940409", color: "text-[#25D366]" },
   { icon: EnvelopeSimple, label: "Email", value: "movemate@tmmgroup.ca", sub: "Reply within 2 hours", href: "mailto:movemate@tmmgroup.ca", color: "text-green-700" },
-  { icon: MapPin, label: "Serving", value: "SK & Winnipeg", sub: "Western Canada", color: "text-green-700" },
+  { icon: MapPin, label: "Serving", value: "Saskatoon,Regina and Other", sub: "Western Canada", color: "text-green-700" },
   { icon: Clock, label: "Hours", value: "Mon–Sat", sub: "Business Hours", color: "text-green-700" },
   { icon: ChatCircle, label: "Inquiry", value: "Get Quote", sub: "Free estimation", color: "text-green-700" },
 ];
@@ -130,7 +129,7 @@ export default function ContactClient() {
       <section className="bg-white py-10 md:py-16 px-4">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
           <div>
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Our Presence in Saskatchewan & Winnipeg</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Our Presence in Saskatoon</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
               {contacts.map((c) => {
                 const Wrapper = c.href ? "a" : "div";
@@ -159,14 +158,6 @@ export default function ContactClient() {
       </section>
 
       <OfficeMap />
-      <section style={{ background: "#fff", padding: "6rem 0" }}>
-        <div className="container-custom">
-          <GHLWidget 
-            title="Book a Strategy Session" 
-            subtitle="Connect with our Google-verified moving team for relocation solutions."
-          />
-        </div>
-      </section>
     </main>
   );
 }

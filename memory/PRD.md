@@ -6,9 +6,9 @@ Build a responsive Ranchi Movers packers and movers website based on Figma desig
 ## What's Been Implemented (Jan 2026)
 - Top bar with phone/email
 - Header with navigation and Get Quote CTA
-- Hero section with CTAs, feature icons, and "15+ Years" badge
+- Hero section with CTAs, feature icons, and "5+ Years" badge
 - Services section (6 services: Home/Office Relocation, Packing, Vehicle Transport, Storage, Insurance)
-- Why Choose Us stats section (15+ Years, 10,000+ Moves, 24/7 Support, Best Rates)
+- Why Choose Us stats section (5+ Years, 10,000+ Moves, 24/7 Support, Best Rates)
 - Trust section with checklist
 - Service Areas grid (30 Ranchi localities)
 - Testimonials section

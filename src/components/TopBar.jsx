@@ -35,7 +35,7 @@ export const TopBar = () => (
       <div className="flex items-center gap-4">
         <div style={{ alignItems: "center", gap: 5, fontSize: "0.80rem", color: "#fff", fontWeight: 600 }} className="hidden lg:flex">
           <MapPin size={13} weight="fill" style={{ color: "#fff" }} />
-          Saskatchewan & Winnipeg
+          Saskatoon & Winnipeg
         </div>
         <div className="flex gap-3">
           <a href="#" style={{ color: "#fff", transition: "opacity 0.2s" }} onMouseEnter={e => e.target.style.opacity = "0.7"} onMouseLeave={e => e.target.style.opacity = "1"} aria-label="Facebook">
