@@ -43,27 +43,27 @@ export default function LongDistanceMovingClient() {
 
   return (
     <main style={{ background: "#F9FAFB" }}>
-      <PageHero 
+      <PageHero
         title="Provincial & Long Distance Moving"
-        subtitle="Bridging the distance with secure, bonded relocation solutions. Specialized household transportation from Saskatchewan to Winnipeg and across Western Canada."
+        subtitle="Bridging the distance with secure, bonded relocation solutions. Specialized household transportation from Saskatoon to Winnipeg and across Western Canada."
         breadcrumb="Long Distance Moving"
       />
 
       <section style={{ padding: "6rem 0" }}>
         <div className="container-custom">
           <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "3rem" }}>
-            <ServiceCard 
+            <ServiceCard
               icon={Truck}
               title="Inter-Provincial Moving"
               desc="Our specialized long-distance team ensures your belongings travel safely across provincial lines. We offer dedicated trucks for your family's peace of mind."
               highlights={["Direct Routes", "Door-to-Door", "Inventory Tracking", "Climate Protection", "Scheduled Delivery", "Binding Quotes"]}
             />
-            
+
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(400px, 1fr))", gap: "2rem" }}>
               <div style={{ background: "var(--navy)", color: "#fff", borderRadius: 12, padding: "3rem" }}>
                 <Warehouse size={48} weight="duotone" style={{ color: "var(--secondary)", marginBottom: "1.5rem" }} />
                 <h3 style={{ fontSize: "1.5rem", fontWeight: 800, marginBottom: "1rem" }}>Secure Storage Hubs</h3>
-                <p style={{ opacity: 0.8, lineHeight: 1.7, marginBottom: "1.5rem" }}>Safe storage facilities in Saskatoon and Winnipeg to bridge the gap between your old and new home.</p>
+                <p style={{ opacity: 0.8, lineHeight: 1.7, marginBottom: "1.5rem" }}>Safe storage facilities in Saskatoon and neighbouring province to bridge the gap between your old and new home.</p>
                 <Link href="/moving-services#storage" style={{ color: "var(--secondary)", fontWeight: 700, textDecoration: "none", display: "flex", alignItems: "center", gap: 8 }}>
                   Explore Storage Options <ArrowRight size={18} />
                 </Link>
@@ -71,16 +71,16 @@ export default function LongDistanceMovingClient() {
               <div style={{ background: "#fff", border: "1px solid #E5E7EB", borderRadius: 12, padding: "3rem" }}>
                 <Globe size={48} weight="duotone" style={{ color: "var(--navy)", marginBottom: "1.5rem" }} />
                 <h3 style={{ fontSize: "1.5rem", fontWeight: 800, marginBottom: "1rem", color: "var(--navy)" }}>Western Canada Network</h3>
-                <p style={{ color: "#6B7280", lineHeight: 1.7, marginBottom: "1.5rem" }}>Comprehensive coverage across Saskatchewan, Manitoba, and Alberta with regular moving schedules.</p>
+                <p style={{ color: "#6B7280", lineHeight: 1.7, marginBottom: "1.5rem" }}>Comprehensive coverage across Saskatoon, Manitoba, and Alberta with regular moving schedules.</p>
                 <div style={{ display: "flex", gap: "1.5rem" }}>
-                   <div style={{ textAlign: "center" }}>
-                     <div style={{ fontSize: "1.5rem", fontWeight: 900, color: "var(--navy)" }}>50+</div>
-                     <div style={{ fontSize: "0.75rem", color: "#9CA3AF", textTransform: "uppercase" }}>Cities Served</div>
-                   </div>
-                   <div style={{ textAlign: "center" }}>
-                     <div style={{ fontSize: "1.5rem", fontWeight: 900, color: "var(--navy)" }}>100%</div>
-                     <div style={{ fontSize: "0.75rem", color: "#9CA3AF", textTransform: "uppercase" }}>Safe Delivery</div>
-                   </div>
+                  <div style={{ textAlign: "center" }}>
+                    <div style={{ fontSize: "1.5rem", fontWeight: 900, color: "var(--navy)" }}>50+</div>
+                    <div style={{ fontSize: "0.75rem", color: "#9CA3AF", textTransform: "uppercase" }}>Cities Served</div>
+                  </div>
+                  <div style={{ textAlign: "center" }}>
+                    <div style={{ fontSize: "1.5rem", fontWeight: 900, color: "var(--navy)" }}>100%</div>
+                    <div style={{ fontSize: "0.75rem", color: "#9CA3AF", textTransform: "uppercase" }}>Safe Delivery</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -93,9 +93,9 @@ export default function LongDistanceMovingClient() {
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div style={{ position: "relative" }}>
-              <img 
-                src="/tmm-long-distance.png" 
-                alt="Modern Long Distance Moving" 
+              <img
+                src="/tmm-long-distance.png"
+                alt="Modern Long Distance Moving"
                 style={{ width: "100%", borderRadius: 20, boxShadow: "0 30px 60px rgba(0,0,0,0.1)" }}
               />
               <div style={{ position: "absolute", bottom: -30, right: -30, background: "var(--secondary)", padding: "2rem", borderRadius: 16, boxShadow: "0 10px 30px rgba(0,0,0,0.1)", maxWidth: 200 }}>
@@ -113,7 +113,7 @@ export default function LongDistanceMovingClient() {
               <p style={{ color: "#4B5563", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "2rem" }}>
                 We use advanced tracking and GHL-integrated workflows to keep you informed at every stage of your long-distance move.
               </p>
-              
+
               <div style={{ display: "grid", gap: "1.5rem" }}>
                 {[
                   { icon: Kanban, title: "Status Updates", desc: "Instantly receive booking confirmations and moving updates via GHL." },

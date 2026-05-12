@@ -47,7 +47,7 @@ export const Header = () => {
              <div className="flex items-center gap-6">
                <span className="flex items-center gap-2">
                  <MapPin size={14} weight="fill" className="text-primary" />
-                 Saskatchewan & Winnipeg
+                 Saskatoon
                </span>
                <a href="mailto:movemate@tmmgroup.ca" className="hidden sm:flex items-center gap-2 text-white/80 no-underline hover:text-primary">
                  <EnvelopeSimple size={14} weight="fill" className="text-primary" />
@@ -76,12 +76,12 @@ export const Header = () => {
                  <span className={`font-black tracking-tighter uppercase leading-none transition-all duration-500 ${
                    scrolled ? "text-lg text-navy" : "text-xl text-navy"
                  }`}>
-                   TMM <span className="text-primary">Moving</span>
+                   TMM <span className="text-primary">Logictics</span>
                  </span>
                  <span className={`font-extrabold uppercase tracking-[0.25em] mt-0.5 transition-all duration-500 ${
                    scrolled ? "text-[7px] text-navy/30" : "text-[9px] text-navy/40"
                  }`}>
-                   Relocation & Storage
+                   Moving and Trucking
                  </span>
                </div>
             </Link>

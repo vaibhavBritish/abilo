@@ -48,7 +48,7 @@ export const Testimonials = () => {
       initial: "D",
       location: "Warehouse Distribution",
       rating: 5,
-      text: "Reliable LTL service. The team was very professional and handled our freight with care. Best rates I found in Saskatchewan for logistics support.",
+      text: "Reliable LTL service. The team was very professional and handled our freight with care. Best rates I found in Saskatoon for logistics support.",
       date: "February 2026",
       avatarColor: avatarColors[3],
     },
@@ -109,7 +109,7 @@ export const Testimonials = () => {
                   data-testid={`testimonial-${i}`}
                 >
                   <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
-                     <Quotes size={32} weight="fill" style={{ color: "rgba(234, 179, 8, 0.1)" }} />
+                    <Quotes size={32} weight="fill" style={{ color: "rgba(234, 179, 8, 0.1)" }} />
                     <div style={{ display: "flex", gap: 2 }}>
                       {[...Array(t.rating)].map((_, j) => (
                         <Star key={j} size={15} weight="fill" style={{ color: "var(--secondary)" }} />

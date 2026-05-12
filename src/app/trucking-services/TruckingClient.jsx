@@ -2,15 +2,15 @@
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { 
-  Truck, 
-  Package, 
-  Check, 
-  ArrowRight, 
-  ShieldCheck, 
-  Clock, 
-  MapPin, 
-  Calendar, 
+import {
+  Truck,
+  Package,
+  Check,
+  ArrowRight,
+  ShieldCheck,
+  Clock,
+  MapPin,
+  Calendar,
   Star,
   HardHat,
   Barcode,
@@ -22,7 +22,7 @@ const PageHero = ({ title, subtitle, breadcrumb }) => (
   <section style={{ background: "var(--navy)", padding: "6rem 0 5rem", position: "relative", overflow: "hidden" }}>
     {/* Decorative Elements */}
     <div style={{ position: "absolute", top: "-10%", right: "-5%", width: "40%", height: "120%", background: "radial-gradient(circle, rgba(234,179,8,0.05) 0%, transparent 70%)", pointerEvents: "none" }} />
-    
+
     <div className="container-custom" style={{ position: "relative", zIndex: 1 }}>
       <div style={{ display: "flex", gap: "0.5rem", alignItems: "center", fontSize: "0.85rem", color: "var(--secondary)", marginBottom: "1.5rem", fontWeight: 600 }}>
         <Link href="/" style={{ color: "inherit", textDecoration: "none" }}>Home</Link>
@@ -33,9 +33,9 @@ const PageHero = ({ title, subtitle, breadcrumb }) => (
         {title.split(" ").map((word, i) => i === 1 ? <span key={i} style={{ color: "var(--secondary)" }}>{word} </span> : word + " ")}
       </h1>
       <p style={{ color: "#D1D5DB", fontSize: "1.2rem", maxWidth: 650, lineHeight: 1.8, margin: 0 }}>{subtitle}</p>
-      
+
       <div style={{ display: "flex", gap: "1.25rem", marginTop: "2.5rem", flexWrap: "wrap" }}>
-        <button onClick={() => window.location.href='/get-quote'} style={{ background: "var(--secondary)", color: "#000", border: "none", padding: "16px 32px", borderRadius: "4px", fontWeight: 700, fontSize: "1rem", cursor: "pointer", display: "flex", alignItems: "center", gap: 10 }}>
+        <button onClick={() => window.location.href = '/get-quote'} style={{ background: "var(--secondary)", color: "#000", border: "none", padding: "16px 32px", borderRadius: "4px", fontWeight: 700, fontSize: "1rem", cursor: "pointer", display: "flex", alignItems: "center", gap: 10 }}>
           Get Freight Quote <ArrowRight size={20} weight="bold" />
         </button>
         <a href="tel:+130609940409" style={{ border: "2px solid rgba(255,255,255,0.2)", color: "#fff", padding: "14px 30px", borderRadius: "4px", fontWeight: 600, textDecoration: "none", display: "flex", alignItems: "center", gap: 10 }}>
@@ -68,9 +68,9 @@ export default function TruckingClient() {
 
   return (
     <main style={{ background: "#F9FAFB" }}>
-      <PageHero 
+      <PageHero
         title="Regional Freight & Logistics Solutions"
-        subtitle="Safe, reliable, and efficient trucking services across Saskatchewan and Western Canada. We keep your supply chain moving with precision."
+        subtitle="Safe, reliable, and efficient trucking services across Saskatoon and Western Canada. We keep your supply chain moving with precision."
         breadcrumb="Trucking Services"
       />
 
@@ -86,19 +86,19 @@ export default function TruckingClient() {
           </div>
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(350px, 1fr))", gap: "2rem" }}>
-            <TruckingFeature 
+            <TruckingFeature
               icon={Truck}
               title="Full Truckload (FTL)"
               desc="Dedicated equipment for your high-volume shipments. Optimal for large-scale cargo requiring direct transportation."
               features={["Dedicated Trailers", "Regional & Long-Haul", "Sealed Cargo Security", "Priority Delivery"]}
             />
-            <TruckingFeature 
+            <TruckingFeature
               icon={Package}
               title="Less-Than-Truckload (LTL)"
               desc="Cost-effective solutions for smaller freight shipments. We optimize routes to save you money on provincial transport."
               features={["Consolidated Shipping", "Flexible Pickup", "Real-time Tracking", "Competitive Pricing"]}
             />
-            <TruckingFeature 
+            <TruckingFeature
               icon={Warehouse}
               title="Logistics Management"
               desc="End-to-end supply chain support. We handle the planning, storage, and execution of your complex logistics needs."
@@ -120,9 +120,9 @@ export default function TruckingClient() {
                 The Standard for <span style={{ color: "var(--secondary)" }}>Safe Freight</span>
               </h2>
               <p style={{ fontSize: "1.1rem", color: "#D1D5DB", marginBottom: "2rem", lineHeight: 1.7 }}>
-                TMM maintains a fleet of modern, meticulously serviced vehicles. Our drivers are trained in advanced safety protocols to ensure your cargo arrives on time and in perfect condition.
+                TMM Logistics INC maintains a fleet of modern, meticulously serviced vehicles. Our drivers are trained in advanced safety protocols to ensure your cargo arrives on time and in perfect condition.
               </p>
-              
+
               <div style={{ display: "flex", flexDirection: "column", gap: "1.5rem" }}>
                 {[
                   { icon: HardHat, title: "Certified Drivers", text: "Background checked and professionally trained logistics experts." },
@@ -141,15 +141,15 @@ export default function TruckingClient() {
             </div>
 
             <div className="reveal" style={{ position: "relative" }}>
-               <img 
-                 src="/tmm-trucking-hero.png" 
-                 alt="TMM Trucking Fleet" 
-                 style={{ width: "100%", borderRadius: 20, boxShadow: "0 20px 50px rgba(0,0,0,0.5)" }}
-               />
-               <div style={{ position: "absolute", bottom: -20, left: 40, background: "var(--secondary)", padding: "1.5rem 2rem", borderRadius: 12, color: "#000", fontWeight: 800, boxShadow: "0 10px 30px rgba(234,179,8,0.3)" }}>
-                  <div style={{ fontSize: "2rem", lineHeight: 1 }}>99.9%</div>
-                  <div style={{ fontSize: "0.8rem", opacity: 0.8 }}>ON-TIME DELIVERY</div>
-               </div>
+              <img
+                src="/tmm-trucking-hero.png"
+                alt="TMM Trucking Fleet"
+                style={{ width: "100%", borderRadius: 20, boxShadow: "0 20px 50px rgba(0,0,0,0.5)" }}
+              />
+              <div style={{ position: "absolute", bottom: -20, left: 40, background: "var(--secondary)", padding: "1.5rem 2rem", borderRadius: 12, color: "#000", fontWeight: 800, boxShadow: "0 10px 30px rgba(234,179,8,0.3)" }}>
+                <div style={{ fontSize: "2rem", lineHeight: 1 }}>99.9%</div>
+                <div style={{ fontSize: "0.8rem", opacity: 0.8 }}>ON-TIME DELIVERY</div>
+              </div>
             </div>
           </div>
         </div>
@@ -164,18 +164,18 @@ export default function TruckingClient() {
           </div>
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "2rem" }}>
-             {[
-               { title: "Dry Van Trailers", text: "Standard 53' trailers for general palletized goods.", icon: Truck },
-               { title: "Flatbed Solutions", text: "Specialized for oversized or side-loading cargo.", icon: HardHat },
-               { title: "Refrigerated (Reefer)", text: "Temperature-controlled for sensitive shipments.", icon: ShieldCheck },
-               { title: "Straight Trucks", text: "Ideal for city delivery and last-mile logistics.", icon: NavigationArrow }
-             ].map((fleet, i) => (
-               <div key={i} style={{ background: "#fff", borderRadius: 8, padding: "2rem", border: "1px solid #E5E7EB", textAlign: "center" }}>
-                 <div style={{ color: "var(--secondary)", marginBottom: "1rem" }}><fleet.icon size={48} weight="duotone" /></div>
-                 <h4 style={{ fontSize: "1.25rem", fontWeight: 800, marginBottom: "0.75rem", color: "var(--navy)" }}>{fleet.title}</h4>
-                 <p style={{ color: "#6B7280", fontSize: "0.9rem", lineHeight: 1.6 }}>{fleet.text}</p>
-               </div>
-             ))}
+            {[
+              { title: "Dry Van Trailers", text: "Standard 53' trailers for general palletized goods.", icon: Truck },
+              { title: "Flatbed Solutions", text: "Specialized for oversized or side-loading cargo.", icon: HardHat },
+              { title: "Refrigerated (Reefer)", text: "Temperature-controlled for sensitive shipments.", icon: ShieldCheck },
+              { title: "Straight Trucks", text: "Ideal for city delivery and last-mile logistics.", icon: NavigationArrow }
+            ].map((fleet, i) => (
+              <div key={i} style={{ background: "#fff", borderRadius: 8, padding: "2rem", border: "1px solid #E5E7EB", textAlign: "center" }}>
+                <div style={{ color: "var(--secondary)", marginBottom: "1rem" }}><fleet.icon size={48} weight="duotone" /></div>
+                <h4 style={{ fontSize: "1.25rem", fontWeight: 800, marginBottom: "0.75rem", color: "var(--navy)" }}>{fleet.title}</h4>
+                <p style={{ color: "#6B7280", fontSize: "0.9rem", lineHeight: 1.6 }}>{fleet.text}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -184,7 +184,7 @@ export default function TruckingClient() {
       <section style={{ background: "var(--secondary)", padding: "4rem 0", textAlign: "center" }}>
         <div className="container-custom">
           <h2 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 800, fontSize: "2.5rem", color: "#000", marginBottom: "1rem" }}>Streamline Your Logistics</h2>
-          <p style={{ color: "rgba(0,0,0,0.7)", marginBottom: "2.5rem", fontWeight: 600, fontSize: "1.1rem" }}>Partner with Saskatchewan's most reliable trucking network.</p>
+          <p style={{ color: "rgba(0,0,0,0.7)", marginBottom: "2.5rem", fontWeight: 600, fontSize: "1.1rem" }}>Partner with Saskatoon's most reliable trucking network.</p>
           <button onClick={() => router.push("/get-quote")} style={{ background: "#000", color: "#fff", border: "none", padding: "16px 40px", borderRadius: 4, fontWeight: 700, fontSize: "1.1rem", cursor: "pointer", boxShadow: "0 10px 30px rgba(0,0,0,0.15)" }}>
             Request Freight Quote
           </button>

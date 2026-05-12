@@ -8,14 +8,14 @@ import {
 
 export const Footer = () => {
   const quickLinks = [
-    { label: "Home",          to: "/" },
+    { label: "Home", to: "/" },
     { label: "Moving Services", to: "/moving-services" },
     { label: "Storage & Supplies", to: "/moving-services#storage" },
-    { label: "About Us",      to: "/about" },
-    { label: "Gallery",       to: "/gallery" },
-    { label: "Testimonials",  to: "/testimonials" },
-    { label: "Get Quote",     to: "/get-quote" },
-    { label: "Contact",       to: "/contact" },
+    { label: "About Us", to: "/about" },
+    { label: "Gallery", to: "/gallery" },
+    { label: "Testimonials", to: "/testimonials" },
+    { label: "Get Quote", to: "/get-quote" },
+    { label: "Contact", to: "/contact" },
   ];
 
   const services = [
@@ -29,11 +29,11 @@ export const Footer = () => {
   ];
 
   const socials = [
-    { Icon: FacebookLogo,  href: "#", label: "Facebook" },
+    { Icon: FacebookLogo, href: "#", label: "Facebook" },
     { Icon: InstagramLogo, href: "#", label: "Instagram" },
-    { Icon: TwitterLogo,   href: "#", label: "Twitter" },
-    { Icon: LinkedinLogo,  href: "#", label: "LinkedIn" },
-    { Icon: YoutubeLogo,   href: "#", label: "YouTube" },
+    { Icon: TwitterLogo, href: "#", label: "Twitter" },
+    { Icon: LinkedinLogo, href: "#", label: "LinkedIn" },
+    { Icon: YoutubeLogo, href: "#", label: "YouTube" },
   ];
 
   return (
@@ -49,7 +49,7 @@ export const Footer = () => {
             <div className="flex items-center gap-3 mb-6 w-fit">
               <div className="flex flex-col leading-none">
                 <span className="text-2xl md:text-3xl font-black text-white font-poppins tracking-tighter uppercase whitespace-nowrap">
-                  TMM Moving
+                  TMM Logistics INC
                 </span>
                 <span className="text-[9px] md:text-[11px] font-bold text-primary uppercase tracking-widest -mt-0.5 whitespace-nowrap">
                   Premium Relocation Services
@@ -57,7 +57,7 @@ export const Footer = () => {
               </div>
             </div>
             <p style={{ fontSize: "0.85rem", lineHeight: 1.7, color: "var(--text-muted)", marginBottom: "1.25rem" }}>
-              Providing professional residential and commercial moving solutions across Saskatchewan and Winnipeg. 
+              Providing professional residential and commercial moving solutions across Saskatoon and neighbouring province.
               Your reliable partner for stress-free relocation and storage.
             </p>
             <div style={{ display: "flex", gap: "0.5rem" }}>
@@ -103,28 +103,28 @@ export const Footer = () => {
               <div style={{ color: "#E5E7EB", fontSize: "0.85rem" }}>movemate@tmmgroup.ca</div>
             </a>
             <div style={{ display: "flex", alignItems: "flex-start", gap: 10 }}>
-                Saskatchewan & Winnipeg <br />Western Canada
-              </div>
+              Saskatoon & Winnipeg <br />Western Canada
             </div>
+          </div>
 
-            {/* Newsletter */}
-            <div style={{ marginTop: "1.5rem" }}>
-              <div style={{ fontSize: "0.8rem", color: "#A1A1AA", marginBottom: "0.5rem" }}>Get moving tips &amp; offers</div>
-              <div style={{ display: "flex", gap: "0.5rem" }}>
-                <input type="email" placeholder="Your email" style={{ flex: 1, background: "#001219", border: "1px solid rgba(255,255,255,0.1)", borderRadius: "2px", padding: "8px 12px", color: "#fff", fontSize: "0.82rem", outline: "none" }} />
-                <button style={{ background: "var(--secondary)", border: "none", borderRadius: "2px", padding: "8px 12px", cursor: "pointer", display: "flex", alignItems: "center", color: "#000", transition: "background 0.2s" }} onMouseEnter={(e) => e.currentTarget.style.background = "var(--secondary-dark)"} onMouseLeave={(e) => e.currentTarget.style.background = "var(--secondary)"} aria-label="Subscribe">
-                  <ArrowRight size={16} weight="bold" />
-                </button>
-              </div>
+          {/* Newsletter */}
+          <div style={{ marginTop: "1.5rem" }}>
+            <div style={{ fontSize: "0.8rem", color: "#A1A1AA", marginBottom: "0.5rem" }}>Get moving tips &amp; offers</div>
+            <div style={{ display: "flex", gap: "0.5rem" }}>
+              <input type="email" placeholder="Your email" style={{ flex: 1, background: "#001219", border: "1px solid rgba(255,255,255,0.1)", borderRadius: "2px", padding: "8px 12px", color: "#fff", fontSize: "0.82rem", outline: "none" }} />
+              <button style={{ background: "var(--secondary)", border: "none", borderRadius: "2px", padding: "8px 12px", cursor: "pointer", display: "flex", alignItems: "center", color: "#000", transition: "background 0.2s" }} onMouseEnter={(e) => e.currentTarget.style.background = "var(--secondary-dark)"} onMouseLeave={(e) => e.currentTarget.style.background = "var(--secondary)"} aria-label="Subscribe">
+                <ArrowRight size={16} weight="bold" />
+              </button>
             </div>
           </div>
         </div>
+      </div>
 
       {/* Bottom bar */}
       <div style={{ padding: "1.25rem 0" }}>
         <div className="container-custom" style={{ display: "flex", flexWrap: "wrap", alignItems: "center", justifyContent: "space-between", gap: "0.75rem" }}>
           <p style={{ fontSize: "0.8rem", color: "var(--text-muted)", margin: 0 }}>
-            © 2026 TMM Moving & Storage. All rights reserved.
+            © 2026 TMM Logistics INC & Storage. All rights reserved.
           </p>
           <div style={{ display: "flex", gap: "1.5rem" }}>
             {["Privacy Policy", "Terms & Conditions", "Sitemap"].map((l) => (

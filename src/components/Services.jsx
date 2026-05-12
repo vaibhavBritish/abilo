@@ -20,11 +20,11 @@ export const Services = () => {
     {
       icon: House,
       title: "Residential Moving",
-      description: "Fast and efficient residential moving services in Saskatchewan and Winnipeg. We handle your family's belongings with utmost care.",
+      description: "Fast and efficient residential moving services in Saskatoon and neighbouring province. We handle your family's belongings with utmost care.",
       features: ["House & Apartment", "Local expertise", "Furniture assembly"],
       color: "icon-green",
       delay: "delay-200",
-      href: "/moving-services",
+      href: "/moving-services#residential",
     },
     {
       icon: Truck,
@@ -33,7 +33,7 @@ export const Services = () => {
       features: ["Alberta routes", "Winnipeg connections", "Scheduled delivery"],
       color: "icon-yellow",
       delay: "delay-300",
-      href: "/moving-services",
+      href: "/moving-services#long-distance",
     },
     {
       icon: Buildings,
@@ -42,7 +42,7 @@ export const Services = () => {
       features: ["Office equipment", "After-hours moving", "Asset management"],
       color: "icon-green",
       delay: "delay-100",
-      href: "/moving-services",
+      href: "/moving-services#commercial",
     },
     {
       icon: Package,
@@ -69,7 +69,7 @@ export const Services = () => {
       features: ["Downsizing help", "Careful handling", "Patient team"],
       color: "icon-yellow",
       delay: "delay-100",
-      href: "/moving-services",
+      href: "/moving-services#senior-relocations",
     },
   ];
 
@@ -88,26 +88,25 @@ export const Services = () => {
             Our Services
           </div>
           <h2 className="section-title">
-            Professional Moving & Storage Solutions
+            Reliable and Professional Movers in Saskatoon
           </h2>
           <div className="divider" style={{ margin: "0.75rem auto 1rem" }} />
           <p className="section-subtitle" style={{ margin: "0 auto" }}>
-            From local house moves to long-distance relocation and secure storage, TMM Moving 
-            provides expert relocation services across Saskatchewan and Winnipeg.
+            From local house moves to long-distance relocation and secure storage, TMM Logistics INC
+            provides expert relocation services across Saskatoon neighbouring province.
           </p>
         </div>
 
         {/* Grid */}
-        <div
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
-        >
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((svc, i) => (
-            <div
+            <Link
               key={svc.title}
-              className={`reveal service-card-new ${svc.delay}`}
+              href={svc.href}
+              className={`reveal service-card-new ${svc.delay} no-underline group`}
               data-testid={`service-card-${svc.title.toLowerCase().replace(" ", "-")}`}
             >
-              <div className={`icon-box ${svc.color}`} style={{ transition: "all 0.3s" }}>
+              <div className={`icon-box ${svc.color} group-hover:bg-primary group-hover:text-white transition-all duration-300`}>
                 <svc.icon size={26} weight="duotone" />
               </div>
 
@@ -136,8 +135,7 @@ export const Services = () => {
                 ))}
               </div>
 
-              <Link
-                href={svc.href}
+              <div
                 style={{
                   display: "flex",
                   alignItems: "center",
@@ -145,14 +143,12 @@ export const Services = () => {
                   fontSize: "0.85rem",
                   fontWeight: 600,
                   color: "var(--primary)",
-                  cursor: "pointer",
                   marginTop: "auto",
-                  textDecoration: "none"
                 }}
               >
-                Learn more <ArrowRight size={14} className="animate-bounce-x" />
-              </Link>
-            </div>
+                Learn more <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
+              </div>
+            </Link>
           ))}
         </div>
       </div>

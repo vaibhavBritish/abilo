@@ -11,7 +11,7 @@ export async function generateMetadata({ params }) {
   if (!location) return {};
 
   return {
-    title: `Best Movers in ${location.city}, ${location.province} | TMM Moving & Storage`,
+    title: `Best Movers in ${location.city}, ${location.province} | TMM Logistics INC & Storage`,
     description: location.description,
     alternates: {
       canonical: `https://tmmgroup.ca/locations/${province.toLowerCase()}/${citySlug}/`,
@@ -21,7 +21,7 @@ export async function generateMetadata({ params }) {
 
 export default function LocationPage({ params }) {
   const { province, citySlug } = params;
-  
+
   // Find the location data
   const location = Object.values(locations).find(
     (l) => l.province.toLowerCase() === province.toLowerCase() && l.slug === citySlug

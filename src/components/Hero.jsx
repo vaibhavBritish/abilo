@@ -13,13 +13,13 @@ export const Hero = ({ location }) => {
     return () => clearTimeout(t);
   }, []);
 
-  const cityName = location?.city || "Saskatchewan";
+  const cityName = location?.city || "Saskatoon";
   const provinceName = location?.provinceFull || "Winnipeg";
-  
+
   const checks = [
-    "Licensed & Insured", 
-    "Packing & Supplies", 
-    location ? `Serving ${location.city}` : "Saskatchewan & Winnipeg"
+    "Licensed & Insured",
+    "Packing & Supplies",
+    location ? `Serving ${location.city}` : "Saskatoon & Winnipeg"
   ];
 
   return (
@@ -48,7 +48,7 @@ export const Hero = ({ location }) => {
             {/* Top badge */}
             <div className="hero-badge" style={{ marginBottom: "1.25rem", fontSize: "0.78rem" }}>
               <Star size={14} weight="fill" />
-              &nbsp;#1 Moving Company in {cityName} · 10+ Years Experience
+              &nbsp;#1 Moving Company in {cityName} · 5+ Years Experience
             </div>
 
             {/* Heading */}
@@ -59,8 +59,8 @@ export const Hero = ({ location }) => {
 
             {/* Sub-text */}
             <p style={{ fontSize: "1.05rem", color: "#E5E7EB", lineHeight: 1.75, marginBottom: "1.5rem", maxWidth: 480 }}>
-              TMM Moving & Storage delivers stress-free home and office relocation in {cityName}. 
-              White-glove service for families, seniors, and businesses across {location ? location.provinceFull : "Saskatchewan and Winnipeg"}.
+              TMM Logistics INC delivers stress-free home and office relocation in {cityName}.
+              White-glove service for families, seniors, and businesses across {location ? location.provinceFull : "Saskatoon and neighbouring province"}.
             </p>
 
             {/* Check list */}
@@ -97,10 +97,10 @@ export const Hero = ({ location }) => {
             {/* Stat pills */}
             <div style={{ display: "flex", flexWrap: "wrap", gap: "0.85rem" }}>
               {[
-                { value: "15+",   label: "Years Experience" },
-                { value: "5K+",   label: "Moves Completed" },
-                { value: "100%",  label: "Safe & Insured" },
-                { value: "10+",   label: "City Locations" },
+                { value: "5+", label: "Years Experience" },
+                { value: "5K+", label: "Moves Completed" },
+                { value: "100%", label: "Safe & Insured" },
+                { value: "10+", label: "City Locations" },
               ].map(({ value, label }) => (
                 <div key={label} className="hero-stat-pill">
                   <div>
@@ -153,7 +153,7 @@ export const Hero = ({ location }) => {
             >
               <img
                 src="/tmm-hero-moving.png"
-                alt={`Professional TMM Moving team serving ${cityName}`}
+                alt={`Professional TMM Logistics INC team serving ${cityName}`}
                 style={{ width: "100%", height: "auto", display: "block" }}
                 data-testid="hero-image"
               />

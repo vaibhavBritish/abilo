@@ -14,9 +14,9 @@ const PageHero = () => (
         <span>›</span>
         <span style={{ color: "#9CA3AF" }}>Testimonials</span>
       </div>
-      <h1 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 800, fontSize: "clamp(2.2rem, 6vw, 3.5rem)", color: "#FFFFFF", margin: "0 0 1.25rem", lineHeight: 1.1 }}>What Our Clients Say About TMM Moving & Storage</h1>
+      <h1 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 800, fontSize: "clamp(2.2rem, 6vw, 3.5rem)", color: "#FFFFFF", margin: "0 0 1.25rem", lineHeight: 1.1 }}>What Our Clients Say About TMM Logistics INC </h1>
       <p style={{ color: "#E5E7EB", fontSize: "1.1rem", maxWidth: 600, lineHeight: 1.7, margin: 0 }}>
-        Read what our clients say about their experience with TMM Moving in Saskatchewan and Winnipeg.
+        Read what our clients say about their experience with TMM Logistics INC in Saskatoon and neighbouring province.
       </p>
     </div>
   </section>
@@ -33,7 +33,7 @@ const RatingBar = ({ label, count, total, color }) => (
 );
 
 const allTestimonials = [
-  { name: "Sarah Jenkins", loc: "Saskatoon → Winnipeg", rating: 5, service: "Home", date: "Jan 2026", color: "var(--secondary)", text: "Outstanding service from start to finish! The team arrived on time, packed everything professionally and delivered safely. Highly recommend TMM Moving to anyone." },
+  { name: "Sarah Jenkins", loc: "Saskatoon → Winnipeg", rating: 5, service: "Home", date: "Jan 2026", color: "var(--secondary)", text: "Outstanding service from start to finish! The team arrived on time, packed everything professionally and delivered safely. Highly recommend TMM Logistics INC to anyone." },
   { name: "Business Owner", loc: "Corporate Relocation", rating: 5, service: "Business", date: "Dec 2025", color: "var(--secondary)", text: "We moved our entire office with zero downtime. The team was organized, fast, and very professional with our IT equipment." },
   { name: "John Miller", loc: "Regina → Saskatoon", rating: 5, service: "Long Distance", date: "Jan 2026", color: "var(--secondary)", text: "Moved across the province and I was worried about my antiques. They wrapped each piece individually and everything arrived perfect. GPS tracking gave me peace of mind." },
   { name: "Local Family", loc: "Saskatoon Local", rating: 5, service: "Home", date: "Nov 2025", color: "var(--secondary)", text: "Best moving service in the prairies! They wrapped my TV and glass items so carefully. The final bill matched the quote exactly." },
@@ -45,7 +45,7 @@ export default function TestimonialsClient() {
   const [filter, setFilter] = useState("All");
   const router = useRouter();
   const sectionRef = useScrollReveal();
-  
+
   const filters = ["All", "Home", "Business", "Long Distance"];
   const filtered = filter === "All" ? allTestimonials : allTestimonials.filter((t) => t.service === filter);
 

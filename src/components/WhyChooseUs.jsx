@@ -7,7 +7,7 @@ export const WhyChooseUs = () => {
   const sectionRef = useScrollReveal();
 
   const stats = [
-    { value: "15+", label: "Years Excellence", suffix: "" },
+    { value: "5+", label: "Years Excellence", suffix: "" },
     { value: "5,000", label: "Happy Clients", suffix: "+" },
     { value: "100", label: "Safe Moves", suffix: "%" },
     { value: "24/7", label: "Client Support", suffix: "" },
@@ -52,7 +52,7 @@ export const WhyChooseUs = () => {
     {
       icon: Star,
       title: "Top Rated Service",
-      desc: "Trusted by families and organizations across Saskatchewan and Winnipeg for our reliable and premium logistics services.",
+      desc: "Trusted by families and organizations across Saskatoon and neighbouring province for our reliable and premium logistics services.",
       color: "icon-yellow",
       delay: "delay-200",
     },
@@ -102,7 +102,7 @@ export const WhyChooseUs = () => {
           <div className="reveal" style={{ textAlign: "center", marginBottom: "3.5rem" }}>
             <div className="section-badge" style={{ background: "rgba(234, 179, 8, 0.1)", color: "var(--secondary)", border: "1px solid rgba(234, 179, 8, 0.2)" }}>
               <Medal size={14} weight="fill" />
-              Saskatchewan's Trusted Logistics Partner
+              Saskatoon's Trusted Logistics Partner
             </div>
             <h2 className="section-title" style={{ color: "#FFFFFF" }}>
               Why Choose TMM Logistics

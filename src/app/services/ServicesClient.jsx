@@ -21,7 +21,7 @@ const PageHero = ({ title, subtitle, breadcrumb }) => (
 const services = [
   {
     icon: House, title: "Residential Moving", color: "icon-green",
-    desc: "Comprehensive home relocation services in Saskatchewan and Winnipeg. We handle your family's goods with utmost care.",
+    desc: "Comprehensive home relocation services in Saskatoon and neighbouring province. We handle your family's goods with utmost care.",
     features: ["Expert packing", "Furniture assembly", "Local expertise", "Unpacking services", "Western Canada reach"],
     price: "Reliable Service",
   },
@@ -144,7 +144,7 @@ const FAQ = () => {
     { q: "Are my belongings insured during the move?", a: "Yes! We provide basic valuation coverage as standard and offer comprehensive insurance options for full replacement value protection." },
     { q: "Do you provide packing materials?", a: "Absolutely. We can supply all necessary materials including specialized boxes, tape, bubble wrap, and wardrobe boxes, or provide full packing services." },
     { q: "Can you move specialized items like pianos or art?", a: "Yes, we have a specialty moving team trained in handling high-value, fragile, and oversized items using custom crating and specialized equipment." },
-    { q: "Do you offer regional storage?", a: "Yes, our Saskatoon and Winnipeg partner facilities are secure and monitored 24/7 to ensure your items remain safe." },
+    { q: "Do you offer regional storage?", a: "Yes, our Saskatoon and neighbouring province partner facilities are secure and monitored 24/7 to ensure your items remain safe." },
     { q: "How are your moving rates calculated?", a: "Local moves are typically hourly-based, while long-distance moves are calculated based on weight/volume and distance. We provide transparent, binding estimates." },
   ];
 
@@ -184,7 +184,7 @@ export default function ServicesClient() {
     <main>
       <PageHero
         title="Professional Moving & Trucking in Western Canada"
-        subtitle="From local residential moves to regional trucking and LTL freight — we provide expert transportation across Saskatchewan and Winnipeg."
+        subtitle="From local residential moves to regional trucking and LTL freight — we provide expert transportation across Saskatoon and neighbouring province."
         breadcrumb="Services"
       />
 

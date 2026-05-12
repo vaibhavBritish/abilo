@@ -24,9 +24,9 @@ const Story = () => (
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
         <div>
           <div className="text-sm text-primary mb-2">📖 Our Story</div>
-          <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-4">Saskatchewan's Trusted Moving Partner</h2>
+          <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-4">Saskatoon's Trusted Moving Partner</h2>
           <p className="text-gray-600 text-sm md:text-base leading-relaxed mb-4">
-            Based in Saskatchewan and serving Winnipeg, we have built a reputation for excellence in white-glove relocation and specialized household transportation.
+            Based in Saskatoon, we have built a reputation for excellence in white-glove relocation and specialized household transportation.
           </p>
           <p className="text-gray-600 text-sm md:text-base leading-relaxed mb-6">
             We handle everything from local studio moves to complex corporate relocations with precision and care.
@@ -69,7 +69,7 @@ const Values = () => (
           { icon: ShieldCheck, title: "Honest Pricing", desc: "We provide detailed, binding estimates with no hidden fees. Transparency is at the core of our moving model.", color: "icon-yellow" },
           { icon: Medal, title: "Expert Handling", desc: "From fragile household items to high-value antiques, we ensure only the best for your belongings.", color: "icon-yellow" },
           { icon: UsersThree, title: "Client First", desc: "Our team is dedicated to ensuring you're never alone during your relocation or shipping process.", color: "icon-yellow" },
-          { icon: Globe, title: "Regional Network", desc: "Based in Saskatoon, our reach extends across Saskatchewan and Winnipeg, ensuring a smooth delivery.", color: "icon-yellow" },
+          { icon: Globe, title: "Regional Network", desc: "Based in Saskatoon, our reach extends across Saskatoon and neighbouring province, ensuring a smooth delivery.", color: "icon-yellow" },
         ].map((v, i) => (
           <div key={v.title} className={`feature-card reveal delay-${(i + 1) * 100}`} style={{ background: "var(--navy-mid)", border: "1px solid rgba(255,255,255,0.05)" }}>
             <div className={`icon-box ${v.color}`} style={{ background: "rgba(234, 179, 8, 0.1)", color: "var(--secondary)", margin: "0 auto 1.25rem" }}><v.icon size={26} weight="duotone" /></div>
@@ -92,7 +92,7 @@ const Timeline = () => (
       </div>
       <div style={{ maxWidth: 700, margin: "0 auto", display: "flex", flexDirection: "column", gap: 0 }}>
         {[
-          { year: "2014", title: "Inception", desc: "TMM Moving started operations with a focus on local residential relocations in Saskatchewan." },
+          { year: "2014", title: "Inception", desc: "TMM Logistics INC started operations with a focus on local residential relocations in Saskatoon." },
           { year: "2017", title: "Full-Service Expansion", desc: "Launched comprehensive packing and climate-controlled storage solutions." },
           { year: "2019", title: "Winnipeg Expansion", desc: "Expanded our reach to serve the Winnipeg area with weekly schedules." },
           { year: "2021", title: "Freight Services", desc: "Introduced Less-Than-Truckload services for warehouses and small businesses." },
@@ -125,7 +125,7 @@ const Team = () => (
       </div>
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))", gap: "1.5rem" }}>
         {[
-          { name: "Management Team", role: "TMM Moving Leaders", exp: "15+ years", color: "var(--secondary)", init: "TMM" },
+          { name: "Management Team", role: "TMM Logistics INC Leaders", exp: "5+ years", color: "var(--secondary)", init: "TMM" },
           { name: "Logistics Team", role: "Freight Specialists", exp: "10+ years", color: "var(--secondary)", init: "LT" },
           { name: "Support Team", role: "Client Success", exp: "8+ years", color: "var(--secondary)", init: "ST" },
           { name: "Field Team", role: "Professional Movers", exp: "12+ years", color: "var(--secondary)", init: "FT" },
@@ -147,8 +147,8 @@ export default function AboutClient() {
   return (
     <main>
       <PageHero
-        title="About TMM Moving & Storage"
-        subtitle="Saskatchewan's premier partner for residential moving, long-distance relocation, and secure storage. Discover our commitment to Western Canada."
+        title="About TMM Logistics INC "
+        subtitle="Saskatoon's premier partner for residential moving, long-distance relocation, and secure storage. Discover our commitment to Western Canada."
         breadcrumb="About"
       />
       <Story />
@@ -161,7 +161,7 @@ export default function AboutClient() {
             <h2 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 800, fontSize: "clamp(1.5rem, 3vw, 2rem)", color: "#000000", margin: "0 0 1rem" }}>
               Join Thousands of Happy Clients
             </h2>
-            <p style={{ color: "rgba(0,0,0,0.7)", marginBottom: "2rem", fontWeight: 500 }}>Experience the TMM Moving difference — where your transport is our priority.</p>
+            <p style={{ color: "rgba(0,0,0,0.7)", marginBottom: "2rem", fontWeight: 500 }}>Experience the TMM Logistics INC difference — where your transport is our priority.</p>
             <button onClick={() => router.push("/get-quote")} className="btn-secondary" style={{ background: "#000814", color: "#fff", display: "inline-flex", alignItems: "center", gap: 8, border: "none", padding: "12px 24px", borderRadius: "4px", fontWeight: 600 }}>
               Get Your Free Quote <ArrowRight size={16} />
             </button>
